@@ -1,0 +1,484 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-03 09:40:19.709377 UTC
+
+interface Monoi_36px53ZPhG84BimjxB5yeC:Comp 7103
+  interface hash: 1fbc2d49a9cb86be363b5565510119ab
+  ABI hash: 11ee450960dc6eedcb2f67187616a2e5
+  export-list hash: 89125c3e5f67fb11d7c4b43f4e23b77d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Comp.compAssoc
+  Comp.Comp{Comp.Comp Comp.unComp}
+module dependencies:
+package dependencies: QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      array-0.5.1.1@array_GYDb2ArsFSSIHqSGBYOjLV base-4.8.2.0*
+                      binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ
+                      bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS
+                      containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe
+                      deepseq-1.4.2.0@deeps_5CvZ3NruJCLG6fI7ct2neg
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW
+                      random-1.1@rando_ErsaxGdx2qN9xGxJzmzYmh
+                      semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp*
+                      tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM template-haskell-2.10.0.0
+                      text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9
+                      tf-random-0.5@tfran_0KoOJ8vyUWi63yKroqCxAy
+                      time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV
+                      transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ
+                      unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ:Data.Binary.Generic
+         bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS:Data.ByteString.Builder
+         hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU:Data.Hashable.Generic
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Show
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Format.Parse
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntMap.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntSet.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Map.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Sequence
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW:Control.Monad.Primitive
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.List.NonEmpty
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup
+                         tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Arbitrary 8fd714c1aa0b696271aa178223178a73
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup ab01b5704defdf2bfd4bd9d2261dc02e
+20672ea52e10dbd5ec80c5096acc4239
+  $fArbitraryComp ::
+    (Test.QuickCheck.Arbitrary.CoArbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary a) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Comp.Comp a)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,C(C1(C1(C1(U))))><L,U(U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      $dCoArbitrary :: Test.QuickCheck.Arbitrary.CoArbitrary a
+                      $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a.
+                  @ (Comp.Comp a)
+                  (Comp.$fArbitraryComp_$carbitrary @ a $dCoArbitrary $dArbitrary)
+                  (Comp.$fArbitraryComp_$cshrink @ a $dCoArbitrary $dArbitrary) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fArbitraryComp1 ::
+    (Test.QuickCheck.Arbitrary.CoArbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary a) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> Comp.Comp a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,C(C1(C1(C1(U))))><L,1*U(1*U,A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   $dCoArbitrary :: Test.QuickCheck.Arbitrary.CoArbitrary a
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   eta :: Test.QuickCheck.Random.QCGen
+                   eta1 :: GHC.Types.Int ->
+                 let {
+                   ds1 :: Test.QuickCheck.Gen.Gen a
+                   = Test.QuickCheck.Arbitrary.arbitrary @ a $dArbitrary
+                 } in
+                 let {
+                   r :: Test.QuickCheck.Random.QCGen
+                   = case eta
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     case ww8 of ww11 { System.Random.TF.Gen.TFGen ww12 ww13 ww14 ww15 ww16 ww17 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww12
+                            ww13
+                            ww14
+                            ww15 of ww18 { (#,#) ww19 ww20 ->
+                     ww19 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) } } } }
+                 } in
+                 (\ r1 :: a ->
+                  ($dCoArbitrary
+                     `cast`
+                   (Test.QuickCheck.Arbitrary.NTCo:CoArbitrary[0] <a>_N)
+                     @ a
+                     r1
+                     ds1)
+                    `cast`
+                  (Test.QuickCheck.Gen.NTCo:Gen[0] <a>_R)
+                    r
+                    eta1)
+                   `cast`
+                 (Sym (Comp.NTCo:Comp[0] <a>_R))) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fArbitraryComp_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.CoArbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary a) =>
+    Test.QuickCheck.Gen.Gen (Comp.Comp a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,C(C1(C1(C1(U))))><L,1*U(1*U,A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Comp.$fArbitraryComp1
+                  `cast`
+                (forall a.
+                 <Test.QuickCheck.Arbitrary.CoArbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R Sym (Test.QuickCheck.Gen.NTCo:Gen[0] <Comp.Comp a>_R)) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fArbitraryComp_$cshrink ::
+    (Test.QuickCheck.Arbitrary.CoArbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary a) =>
+    Comp.Comp a -> [Comp.Comp a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   $dCoArbitrary :: Test.QuickCheck.Arbitrary.CoArbitrary a
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   ds1 :: Comp.Comp a ->
+                 GHC.Types.[] @ (Comp.Comp a)) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fSemigroupComp ::
+    Data.Semigroup.Semigroup a =>
+    Data.Semigroup.Semigroup (Comp.Comp a)
+  DFunId[0]
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a $dSemigroup :: Data.Semigroup.Semigroup a.
+                  @ (Comp.Comp a)
+                  (Comp.$fSemigroupComp_$c<> @ a $dSemigroup)
+                  (Comp.$fSemigroupComp_$csconcat @ a $dSemigroup)
+                  (Comp.$fSemigroupComp_$cstimes @ a $dSemigroup) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fSemigroupComp1 ::
+    Data.Semigroup.Semigroup a => Comp.Comp a -> Comp.Comp a -> a -> a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))LL),1*U(1*C1(C1(U)),A,A)><L,1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   ds :: Comp.Comp a
+                   ds1 :: Comp.Comp a
+                   eta :: a ->
+                 Data.Semigroup.$fSemigroup(->)_$c<>
+                   @ a
+                   @ a
+                   $dSemigroup
+                   ds `cast` (Comp.NTCo:Comp[0] <a>_R)
+                   ds1 `cast` (Comp.NTCo:Comp[0] <a>_R)
+                   eta) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fSemigroupComp_$c<> ::
+    Data.Semigroup.Semigroup a =>
+    Comp.Comp a -> Comp.Comp a -> Comp.Comp a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))LL),1*U(1*C1(C1(U)),A,A)><L,1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Comp.$fSemigroupComp1
+                  `cast`
+                (forall a.
+                 <Data.Semigroup.Semigroup a>_R
+                 ->_R <Comp.Comp a>_R
+                 ->_R <Comp.Comp a>_R
+                 ->_R Sym (Comp.NTCo:Comp[0] <a>_R)) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fSemigroupComp_$csconcat ::
+    Data.Semigroup.Semigroup a =>
+    Data.List.NonEmpty.NonEmpty (Comp.Comp a) -> Comp.Comp a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><S(LS),1*U(U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.List.NonEmpty.NonEmpty (Comp.Comp a) ->
+                 case w1 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 Comp.$w$csconcat @ a w ww1 ww2 }) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fSemigroupComp_$cstimes ::
+    Data.Semigroup.Semigroup a =>
+    forall b. GHC.Real.Integral b => b -> Comp.Comp a -> Comp.Comp a
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   @ b
+                   $dIntegral :: GHC.Real.Integral b
+                   eta :: b
+                   eta1 :: Comp.Comp a ->
+                 let {
+                   $dReal :: GHC.Real.Real b = GHC.Real.$p1Integral @ b $dIntegral
+                 } in
+                 case GHC.Classes.<=
+                        @ b
+                        (GHC.Real.$p2Real @ b $dReal)
+                        eta
+                        (GHC.Num.fromInteger
+                           @ b
+                           (GHC.Real.$p1Real @ b $dReal)
+                           __integer 0) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b $dIntegral
+                      } in
+                      let {
+                        $dEnum :: GHC.Enum.Enum b = GHC.Real.$p2Integral @ b $dIntegral
+                      } in
+                      let {
+                        a31 :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal1
+                      } in
+                      let {
+                        $dEq :: GHC.Classes.Eq b = GHC.Classes.$p1Ord @ b a31
+                      } in
+                      let {
+                        $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                      } in
+                      letrec {
+                        f :: Comp.Comp a -> b -> Comp.Comp a {- Arity: 2 -}
+                        = \ x :: Comp.Comp a y :: b ->
+                          case GHC.Real.even @ b $dIntegral y of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ b
+                                      $dEq
+                                      y
+                                      (GHC.Num.fromInteger @ b $dNum __integer 1) of wild2 {
+                                 GHC.Types.False
+                                 -> let {
+                                      $dReal2 :: GHC.Real.Real b
+                                      = GHC.Real.$p1Integral @ b $dIntegral
+                                    } in
+                                    let {
+                                      $dEnum1 :: GHC.Enum.Enum b
+                                      = GHC.Real.$p2Integral @ b $dIntegral
+                                    } in
+                                    let {
+                                      a32 :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal2
+                                    } in
+                                    let {
+                                      $dEq1 :: GHC.Classes.Eq b = GHC.Classes.$p1Ord @ b a32
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal2
+                                    } in
+                                    letrec {
+                                      g :: Comp.Comp a -> b -> Comp.Comp a -> Comp.Comp a
+                                        {- Arity: 3 -}
+                                      = \ x1 :: Comp.Comp a y1 :: b z :: Comp.Comp a ->
+                                        case GHC.Real.even @ b $dIntegral y1 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Classes.==
+                                                    @ b
+                                                    $dEq1
+                                                    y1
+                                                    (GHC.Num.fromInteger
+                                                       @ b
+                                                       $dNum1
+                                                       __integer 1) of wild4 {
+                                               GHC.Types.False
+                                               -> g (Comp.$fSemigroupComp_$c<>
+                                                       @ a
+                                                       $dSemigroup
+                                                       x1
+                                                       x1)
+                                                    (GHC.Real.quot
+                                                       @ b
+                                                       $dIntegral
+                                                       (GHC.Enum.pred @ b $dEnum1 y1)
+                                                       (GHC.Num.fromInteger @ b $dNum1 __integer 2))
+                                                    (Comp.$fSemigroupComp_$c<> @ a $dSemigroup x1 z)
+                                               GHC.Types.True
+                                               -> Comp.$fSemigroupComp_$c<> @ a $dSemigroup x1 z }
+                                          GHC.Types.True
+                                          -> g (Comp.$fSemigroupComp_$c<> @ a $dSemigroup x1 x1)
+                                               (GHC.Real.quot
+                                                  @ b
+                                                  $dIntegral
+                                                  y1
+                                                  (GHC.Num.fromInteger @ b $dNum1 __integer 2))
+                                               z }
+                                    } in
+                                    g (Comp.$fSemigroupComp_$c<> @ a $dSemigroup x x)
+                                      (GHC.Real.quot
+                                         @ b
+                                         $dIntegral
+                                         (GHC.Enum.pred @ b $dEnum y)
+                                         (GHC.Num.fromInteger @ b $dNum __integer 2))
+                                      x
+                                 GHC.Types.True -> x }
+                            GHC.Types.True
+                            -> f (Comp.$fSemigroupComp_$c<> @ a $dSemigroup x x)
+                                 (GHC.Real.quot
+                                    @ b
+                                    $dIntegral
+                                    y
+                                    (GHC.Num.fromInteger @ b $dNum __integer 2)) }
+                      } in
+                      f eta1 eta
+                   GHC.Types.True
+                   -> GHC.Err.error
+                        @ (Comp.Comp a)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b1 ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b1
+                              "stimes: positive multiplier expected"#)) }) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fShowComp :: GHC.Show.Show (Comp.Comp a)
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Comp.Comp a)
+                  (Comp.$fShowComp_$cshowsPrec @ a)
+                  (Comp.$fShowComp_$cshow @ a)
+                  (Comp.$fShowComp_$cshowList @ a) -}
+ad88a02c6e62338ded2c4c45408cbfdd
+  $fShowComp1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Comp {unComp = <function>}"#) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fShowComp_$cshow :: Comp.Comp a -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a ds :: Comp.Comp a -> Comp.$fShowComp1) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fShowComp_$cshowList :: [Comp.Comp a] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ls :: [Comp.Comp a] s :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Comp.Comp a)
+                   (\ x :: Comp.Comp a s1 :: GHC.Base.String[OneShot] ->
+                    GHC.Base.augment
+                      @ GHC.Types.Char
+                      (\ @ b c :: GHC.Types.Char -> b -> b[OneShot] n :: b[OneShot] ->
+                       GHC.Base.foldr @ GHC.Types.Char @ b c n Comp.$fShowComp1)
+                      s1)
+                   ls
+                   s) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $fShowComp_$cshowsPrec ::
+    GHC.Types.Int -> Comp.Comp a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><L,A><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ds :: GHC.Types.Int x :: Comp.Comp a s :: GHC.Base.String ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b c :: GHC.Types.Char -> b -> b[OneShot] n :: b[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Comp.$fShowComp1)
+                   s) -}
+20672ea52e10dbd5ec80c5096acc4239
+  $w$csconcat ::
+    Data.Semigroup.Semigroup a =>
+    Comp.Comp a -> [Comp.Comp a] -> Comp.Comp a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   w :: Data.Semigroup.Semigroup a
+                   ww :: Comp.Comp a
+                   ww1 :: [Comp.Comp a] ->
+                 letrec {
+                   go :: Comp.Comp a -> [Comp.Comp a] -> Comp.Comp a
+                     {- Arity: 2, Strictness: <L,U><S,1*U> -}
+                   = \ b :: Comp.Comp a ds1 :: [Comp.Comp a] ->
+                     case ds1 of wild1 {
+                       [] -> b
+                       : c cs
+                       -> let {
+                            ds :: Comp.Comp a = go c cs
+                          } in
+                          (\ eta :: a ->
+                           Data.Semigroup.$fSemigroup(->)_$c<>
+                             @ a
+                             @ a
+                             w
+                             b `cast` (Comp.NTCo:Comp[0] <a>_R)
+                             ds `cast` (Comp.NTCo:Comp[0] <a>_R)
+                             eta)
+                            `cast`
+                          (Sym (Comp.NTCo:Comp[0] <a>_R)) }
+                 } in
+                 go ww ww1) -}
+20672ea52e10dbd5ec80c5096acc4239
+  newtype Comp a = Comp {unComp :: a -> a}
+    Promotable
+9e869ec90ed12e66c7a9802f4764fd89
+  compAssoc ::
+    Comp.Comp GHC.Base.String
+    -> Comp.Comp GHC.Base.String
+    -> Comp.Comp GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(S),C(U)><L,C(U)><L,C(U)><L,U>,
+     Unfolding: (\ a :: Comp.Comp GHC.Base.String
+                   b :: Comp.Comp GHC.Base.String
+                   c :: Comp.Comp GHC.Base.String
+                   d :: GHC.Base.String ->
+                 GHC.Base.eqString
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      (a `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (b `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)
+                         (c `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)))
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      (a `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (b `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)
+                         (c `cast` (Comp.NTCo:Comp[0] <[GHC.Types.Char]>_R) d)))) -}
+760115690b8ce50f2fb5613f632895a9
+  unComp :: Comp.Comp a -> a -> a
+  RecSel Comp.Comp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Comp.unComp1
+                  `cast`
+                (forall a. <Comp.Comp a>_R ->_R Comp.NTCo:Comp[0] <a>_R) -}
+274e1a1f7cac016ab43e4815d3493bbd
+  unComp1 :: Comp.Comp a -> Comp.Comp a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a ds :: Comp.Comp a -> ds) -}
+instance Test.QuickCheck.Arbitrary.Arbitrary [Comp.Comp]
+  = Comp.$fArbitraryComp
+instance Data.Semigroup.Semigroup [Comp.Comp]
+  = Comp.$fSemigroupComp
+instance GHC.Show.Show [Comp.Comp] = Comp.$fShowComp
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

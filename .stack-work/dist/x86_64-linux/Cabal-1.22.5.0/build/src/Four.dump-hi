@@ -1,0 +1,1016 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-29 11:56:22.920109 UTC
+
+interface Monoi_36px53ZPhG84BimjxB5yeC:Four 7103
+  interface hash: 7ee50c906f354bb5750f00608565db1b
+  ABI hash: 4cfca8e4ec1de246ad8ea9203d63770d
+  export-list hash: 9f250d2b5af08cea9de4e282035b4571
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Four.semigroupFourAssoc
+  Four.FourAssoc
+module dependencies:
+package dependencies: QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      array-0.5.1.1@array_GYDb2ArsFSSIHqSGBYOjLV base-4.8.2.0*
+                      binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ
+                      bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS
+                      containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe
+                      deepseq-1.4.2.0@deeps_5CvZ3NruJCLG6fI7ct2neg
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW
+                      random-1.1@rando_ErsaxGdx2qN9xGxJzmzYmh
+                      semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp*
+                      tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM template-haskell-2.10.0.0
+                      text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9
+                      tf-random-0.5@tfran_0KoOJ8vyUWi63yKroqCxAy
+                      time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV
+                      transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ
+                      unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ:Data.Binary.Generic
+         bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS:Data.ByteString.Builder
+         hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU:Data.Hashable.Generic
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Show
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Format.Parse
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntMap.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntSet.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Map.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Sequence
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW:Control.Monad.Primitive
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.List.NonEmpty
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup
+                         tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Arbitrary 8fd714c1aa0b696271aa178223178a73
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup ab01b5704defdf2bfd4bd9d2261dc02e
+d46966827c409e55c31f02ab71680f33
+  $fArbitraryFour ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c,
+     Test.QuickCheck.Arbitrary.Arbitrary d) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Four.Four a b c d)
+  DFunId[0]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      @ d
+                      $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                      $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                      $dArbitrary2 :: Test.QuickCheck.Arbitrary.Arbitrary c
+                      $dArbitrary3 :: Test.QuickCheck.Arbitrary.Arbitrary d.
+                  @ (Four.Four a b c d)
+                  (Four.$fArbitraryFour_$carbitrary
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dArbitrary
+                     $dArbitrary1
+                     $dArbitrary2
+                     $dArbitrary3)
+                  (Four.$fArbitraryFour_$cshrink
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dArbitrary
+                     $dArbitrary1
+                     $dArbitrary2
+                     $dArbitrary3) -}
+d46966827c409e55c31f02ab71680f33
+  $fArbitraryFour1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c,
+     Test.QuickCheck.Arbitrary.Arbitrary d) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> Four.Four a b c d
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   w1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   w2 :: Test.QuickCheck.Arbitrary.Arbitrary c
+                   w3 :: Test.QuickCheck.Arbitrary.Arbitrary d
+                   w4 :: Test.QuickCheck.Random.QCGen
+                   w5 :: GHC.Types.Int ->
+                 case Four.$wa
+                        @ a
+                        @ b
+                        @ c
+                        @ d
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5 of ww { (#,,,#) ww1 ww2 ww3 ww4 ->
+                 Four.Four @ a @ b @ c @ d ww1 ww2 ww3 ww4 }) -}
+d46966827c409e55c31f02ab71680f33
+  $fArbitraryFour_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c,
+     Test.QuickCheck.Arbitrary.Arbitrary d) =>
+    Test.QuickCheck.Gen.Gen (Four.Four a b c d)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                Four.$fArbitraryFour1
+                  `cast`
+                (forall a b c d.
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary c>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary d>_R
+                 ->_R Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                               <Four.Four a b c d>_R)) -}
+d46966827c409e55c31f02ab71680f33
+  $fArbitraryFour_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c,
+     Test.QuickCheck.Arbitrary.Arbitrary d) =>
+    Four.Four a b c d -> [Four.Four a b c d]
+  {- Arity: 5, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (5, True, True)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   $dArbitrary2 :: Test.QuickCheck.Arbitrary.Arbitrary c
+                   $dArbitrary3 :: Test.QuickCheck.Arbitrary.Arbitrary d
+                   ds1 :: Four.Four a b c d ->
+                 GHC.Types.[] @ (Four.Four a b c d)) -}
+d46966827c409e55c31f02ab71680f33
+  $fEqFour ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b, GHC.Classes.Eq c,
+     GHC.Classes.Eq d) =>
+    GHC.Classes.Eq (Four.Four a b c d)
+  DFunId[0]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      @ d
+                      $dEq :: GHC.Classes.Eq a
+                      $dEq1 :: GHC.Classes.Eq b
+                      $dEq2 :: GHC.Classes.Eq c
+                      $dEq3 :: GHC.Classes.Eq d.
+                  @ (Four.Four a b c d)
+                  (Four.$fEqFour_$c== @ a @ b @ c @ d $dEq $dEq1 $dEq2 $dEq3)
+                  (Four.$fEqFour_$c/= @ a @ b @ c @ d $dEq $dEq1 $dEq2 $dEq3) -}
+d46966827c409e55c31f02ab71680f33
+  $fEqFour_$c/= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b, GHC.Classes.Eq c,
+     GHC.Classes.Eq d) =>
+    Four.Four a b c d -> Four.Four a b c d -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U(U,U,U,U)><S,1*U(U,U,U,U)>,
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dEq :: GHC.Classes.Eq a
+                   $dEq1 :: GHC.Classes.Eq b
+                   $dEq2 :: GHC.Classes.Eq c
+                   $dEq3 :: GHC.Classes.Eq d
+                   a1 :: Four.Four a b c d
+                   b1 :: Four.Four a b c d ->
+                 case Four.$fEqFour_$c==
+                        @ a
+                        @ b
+                        @ c
+                        @ d
+                        $dEq
+                        $dEq1
+                        $dEq2
+                        $dEq3
+                        a1
+                        b1 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+d46966827c409e55c31f02ab71680f33
+  $fEqFour_$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b, GHC.Classes.Eq c,
+     GHC.Classes.Eq d) =>
+    Four.Four a b c d -> Four.Four a b c d -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U(U,U,U,U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: GHC.Classes.Eq a
+                   w1 :: GHC.Classes.Eq b
+                   w2 :: GHC.Classes.Eq c
+                   w3 :: GHC.Classes.Eq d
+                   w4 :: Four.Four a b c d
+                   w5 :: Four.Four a b c d ->
+                 case w4 of ww { Four.Four ww1 ww2 ww3 ww4 ->
+                 case w5 of ww5 { Four.Four ww6 ww7 ww8 ww9 ->
+                 Four.$w$c==
+                   @ a
+                   @ b
+                   @ c
+                   @ d
+                   w
+                   w1
+                   w2
+                   w3
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww6
+                   ww7
+                   ww8
+                   ww9 } }) -}
+d46966827c409e55c31f02ab71680f33
+  $fSemigroupFour ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c, Data.Semigroup.Semigroup d) =>
+    Data.Semigroup.Semigroup (Four.Four a b c d)
+  DFunId[0]
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      @ d
+                      $dSemigroup :: Data.Semigroup.Semigroup a
+                      $dSemigroup1 :: Data.Semigroup.Semigroup b
+                      $dSemigroup2 :: Data.Semigroup.Semigroup c
+                      $dSemigroup3 :: Data.Semigroup.Semigroup d.
+                  @ (Four.Four a b c d)
+                  (Four.$fSemigroupFour_$c<>
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2
+                     $dSemigroup3)
+                  (Four.$fSemigroupFour_$csconcat
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2
+                     $dSemigroup3)
+                  (Four.$fSemigroupFour_$cstimes
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2
+                     $dSemigroup3) -}
+d46966827c409e55c31f02ab71680f33
+  $fSemigroupFour_$c<> ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c, Data.Semigroup.Semigroup d) =>
+    Four.Four a b c d -> Four.Four a b c d -> Four.Four a b c d
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U,U,U,U)><S,1*U(U,U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.Semigroup.Semigroup b
+                   w2 :: Data.Semigroup.Semigroup c
+                   w3 :: Data.Semigroup.Semigroup d
+                   w4 :: Four.Four a b c d
+                   w5 :: Four.Four a b c d ->
+                 case w4 of ww { Four.Four ww1 ww2 ww3 ww4 ->
+                 case w5 of ww5 { Four.Four ww6 ww7 ww8 ww9 ->
+                 Four.Four
+                   @ a
+                   @ b
+                   @ c
+                   @ d
+                   (Data.Semigroup.<> @ a w ww1 ww6)
+                   (Data.Semigroup.<> @ b w1 ww2 ww7)
+                   (Data.Semigroup.<> @ c w2 ww3 ww8)
+                   (Data.Semigroup.<> @ d w3 ww4 ww9) } }) -}
+d46966827c409e55c31f02ab71680f33
+  $fSemigroupFour_$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c, Data.Semigroup.Semigroup d) =>
+    Data.List.NonEmpty.NonEmpty (Four.Four a b c d)
+    -> Four.Four a b c d
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(SS),1*U(1*U(U,U,U,U),1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.Semigroup.Semigroup b
+                   w2 :: Data.Semigroup.Semigroup c
+                   w3 :: Data.Semigroup.Semigroup d
+                   w4 :: Data.List.NonEmpty.NonEmpty (Four.Four a b c d) ->
+                 case w4 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 case ww1 of ww3 { Four.Four ww4 ww5 ww6 ww7 ->
+                 case Four.$w$csconcat
+                        @ a
+                        @ b
+                        @ c
+                        @ d
+                        w
+                        w1
+                        w2
+                        w3
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        ww2 of ww8 { (#,,,#) ww9 ww10 ww11 ww12 ->
+                 Four.Four @ a @ b @ c @ d ww9 ww10 ww11 ww12 } } }) -}
+d46966827c409e55c31f02ab71680f33
+  $fSemigroupFour_$cstimes ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c, Data.Semigroup.Semigroup d) =>
+    forall b1.
+    GHC.Real.Integral b1 =>
+    b1 -> Four.Four a b c d -> Four.Four a b c d
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   $dSemigroup1 :: Data.Semigroup.Semigroup b
+                   $dSemigroup2 :: Data.Semigroup.Semigroup c
+                   $dSemigroup3 :: Data.Semigroup.Semigroup d
+                   @ b1
+                   $dIntegral :: GHC.Real.Integral b1
+                   eta :: b1
+                   eta1 :: Four.Four a b c d ->
+                 let {
+                   $dReal :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                 } in
+                 case GHC.Classes.<=
+                        @ b1
+                        (GHC.Real.$p2Real @ b1 $dReal)
+                        eta
+                        (GHC.Num.fromInteger
+                           @ b1
+                           (GHC.Real.$p1Real @ b1 $dReal)
+                           __integer 0) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $dReal1 :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        $dEnum :: GHC.Enum.Enum b1 = GHC.Real.$p2Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        a31 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal1
+                      } in
+                      let {
+                        $dEq :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a31
+                      } in
+                      let {
+                        $dNum :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal1
+                      } in
+                      letrec {
+                        f :: Four.Four a b c d -> b1 -> Four.Four a b c d {- Arity: 2 -}
+                        = \ x :: Four.Four a b c d y :: b1 ->
+                          case GHC.Real.even @ b1 $dIntegral y of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ b1
+                                      $dEq
+                                      y
+                                      (GHC.Num.fromInteger @ b1 $dNum __integer 1) of wild2 {
+                                 GHC.Types.False
+                                 -> let {
+                                      $dReal2 :: GHC.Real.Real b1
+                                      = GHC.Real.$p1Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      $dEnum1 :: GHC.Enum.Enum b1
+                                      = GHC.Real.$p2Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      a32 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal2
+                                    } in
+                                    let {
+                                      $dEq1 :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a32
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal2
+                                    } in
+                                    letrec {
+                                      g :: Four.Four a b c d
+                                           -> b1 -> Four.Four a b c d -> Four.Four a b c d
+                                        {- Arity: 3 -}
+                                      = \ x1 :: Four.Four a b c d y1 :: b1 z :: Four.Four a b c d ->
+                                        case GHC.Real.even @ b1 $dIntegral y1 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Classes.==
+                                                    @ b1
+                                                    $dEq1
+                                                    y1
+                                                    (GHC.Num.fromInteger
+                                                       @ b1
+                                                       $dNum1
+                                                       __integer 1) of wild4 {
+                                               GHC.Types.False
+                                               -> g (Four.$fSemigroupFour_$c<>
+                                                       @ a
+                                                       @ b
+                                                       @ c
+                                                       @ d
+                                                       $dSemigroup
+                                                       $dSemigroup1
+                                                       $dSemigroup2
+                                                       $dSemigroup3
+                                                       x1
+                                                       x1)
+                                                    (GHC.Real.quot
+                                                       @ b1
+                                                       $dIntegral
+                                                       (GHC.Enum.pred @ b1 $dEnum1 y1)
+                                                       (GHC.Num.fromInteger
+                                                          @ b1
+                                                          $dNum1
+                                                          __integer 2))
+                                                    (Four.$fSemigroupFour_$c<>
+                                                       @ a
+                                                       @ b
+                                                       @ c
+                                                       @ d
+                                                       $dSemigroup
+                                                       $dSemigroup1
+                                                       $dSemigroup2
+                                                       $dSemigroup3
+                                                       x1
+                                                       z)
+                                               GHC.Types.True
+                                               -> Four.$fSemigroupFour_$c<>
+                                                    @ a
+                                                    @ b
+                                                    @ c
+                                                    @ d
+                                                    $dSemigroup
+                                                    $dSemigroup1
+                                                    $dSemigroup2
+                                                    $dSemigroup3
+                                                    x1
+                                                    z }
+                                          GHC.Types.True
+                                          -> g (Four.$fSemigroupFour_$c<>
+                                                  @ a
+                                                  @ b
+                                                  @ c
+                                                  @ d
+                                                  $dSemigroup
+                                                  $dSemigroup1
+                                                  $dSemigroup2
+                                                  $dSemigroup3
+                                                  x1
+                                                  x1)
+                                               (GHC.Real.quot
+                                                  @ b1
+                                                  $dIntegral
+                                                  y1
+                                                  (GHC.Num.fromInteger @ b1 $dNum1 __integer 2))
+                                               z }
+                                    } in
+                                    g (Four.$fSemigroupFour_$c<>
+                                         @ a
+                                         @ b
+                                         @ c
+                                         @ d
+                                         $dSemigroup
+                                         $dSemigroup1
+                                         $dSemigroup2
+                                         $dSemigroup3
+                                         x
+                                         x)
+                                      (GHC.Real.quot
+                                         @ b1
+                                         $dIntegral
+                                         (GHC.Enum.pred @ b1 $dEnum y)
+                                         (GHC.Num.fromInteger @ b1 $dNum __integer 2))
+                                      x
+                                 GHC.Types.True -> x }
+                            GHC.Types.True
+                            -> f (Four.$fSemigroupFour_$c<>
+                                    @ a
+                                    @ b
+                                    @ c
+                                    @ d
+                                    $dSemigroup
+                                    $dSemigroup1
+                                    $dSemigroup2
+                                    $dSemigroup3
+                                    x
+                                    x)
+                                 (GHC.Real.quot
+                                    @ b1
+                                    $dIntegral
+                                    y
+                                    (GHC.Num.fromInteger @ b1 $dNum __integer 2)) }
+                      } in
+                      f eta1 eta
+                   GHC.Types.True
+                   -> GHC.Err.error
+                        @ (Four.Four a b c d)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b2 ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b2
+                              "stimes: positive multiplier expected"#)) }) -}
+d46966827c409e55c31f02ab71680f33
+  $fShowFour ::
+    (GHC.Show.Show a, GHC.Show.Show b, GHC.Show.Show c,
+     GHC.Show.Show d) =>
+    GHC.Show.Show (Four.Four a b c d)
+  DFunId[0]
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      @ d
+                      $dShow :: GHC.Show.Show a
+                      $dShow1 :: GHC.Show.Show b
+                      $dShow2 :: GHC.Show.Show c
+                      $dShow3 :: GHC.Show.Show d.
+                  @ (Four.Four a b c d)
+                  (Four.$fShowFour_$cshowsPrec
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dShow
+                     $dShow1
+                     $dShow2
+                     $dShow3)
+                  (Four.$fShowFour_$cshow
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dShow
+                     $dShow1
+                     $dShow2
+                     $dShow3)
+                  (Four.$fShowFour_$cshowList
+                     @ a
+                     @ b
+                     @ c
+                     @ d
+                     $dShow
+                     $dShow1
+                     $dShow2
+                     $dShow3) -}
+51a3663d93818406149103787059cec0
+  $fShowFour1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+bdf9a0e6fe35d73fe5ed80ad98fc8d39
+  $fShowFour2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Four "#) -}
+b1c1bc69704d767c11ab40c61563156d
+  $fShowFour3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+d46966827c409e55c31f02ab71680f33
+  $fShowFour_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b, GHC.Show.Show c,
+     GHC.Show.Show d) =>
+    Four.Four a b c d -> GHC.Base.String
+  {- Arity: 5,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U,U,U,U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   $dShow2 :: GHC.Show.Show c
+                   $dShow3 :: GHC.Show.Show d
+                   x :: Four.Four a b c d ->
+                 Four.$fShowFour_$cshowsPrec
+                   @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dShow
+                   $dShow1
+                   $dShow2
+                   $dShow3
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d46966827c409e55c31f02ab71680f33
+  $fShowFour_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b, GHC.Show.Show c,
+     GHC.Show.Show d) =>
+    [Four.Four a b c d] -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   $dShow2 :: GHC.Show.Show c
+                   $dShow3 :: GHC.Show.Show d
+                   eta :: [Four.Four a b c d]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Four.Four a b c d)
+                   (Four.$fShowFour_$cshowsPrec
+                      @ a
+                      @ b
+                      @ c
+                      @ d
+                      $dShow
+                      $dShow1
+                      $dShow2
+                      $dShow3
+                      Four.$fShowFour1)
+                   eta
+                   eta1) -}
+d46966827c409e55c31f02ab71680f33
+  $fShowFour_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b, GHC.Show.Show c,
+     GHC.Show.Show d) =>
+    GHC.Types.Int -> Four.Four a b c d -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Show.Show c
+                   w3 :: GHC.Show.Show d
+                   w4 :: GHC.Types.Int
+                   w5 :: Four.Four a b c d ->
+                 case w4 of ww { GHC.Types.I# ww1 ->
+                 case w5 of ww2 { Four.Four ww3 ww4 ww5 ww6 ->
+                 Four.$w$cshowsPrec
+                   @ a
+                   @ b
+                   @ c
+                   @ d
+                   w
+                   w1
+                   w2
+                   w3
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6 } }) -}
+8870e41fa67932bf2d00cc6a6804eb00
+  $w$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b, GHC.Classes.Eq c,
+     GHC.Classes.Eq d) =>
+    a -> b -> c -> d -> a -> b -> c -> d -> GHC.Types.Bool
+  {- Arity: 12, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: GHC.Classes.Eq a
+                   w1 :: GHC.Classes.Eq b
+                   w2 :: GHC.Classes.Eq c
+                   w3 :: GHC.Classes.Eq d
+                   ww :: a
+                   ww1 :: b
+                   ww2 :: c
+                   ww3 :: d
+                   ww4 :: a
+                   ww5 :: b
+                   ww6 :: c
+                   ww7 :: d ->
+                 case GHC.Classes.== @ a w ww ww4 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.== @ b w1 ww1 ww5 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case GHC.Classes.== @ c w2 ww2 ww6 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> GHC.Classes.== @ d w3 ww3 ww7 } } }) -}
+d46966827c409e55c31f02ab71680f33
+  $w$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c, Data.Semigroup.Semigroup d) =>
+    a -> b -> c -> d -> [Four.Four a b c d] -> (# a, b, c, d #)
+  {- Arity: 9, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.Semigroup.Semigroup b
+                   w2 :: Data.Semigroup.Semigroup c
+                   w3 :: Data.Semigroup.Semigroup d
+                   ww :: a
+                   ww1 :: b
+                   ww2 :: c
+                   ww3 :: d
+                   ww4 :: [Four.Four a b c d] ->
+                 letrec {
+                   $wgo :: a -> b -> c -> d -> [Four.Four a b c d] -> (# a, b, c, d #)
+                     {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
+                        Inline: [0] -}
+                   = \ ww5 :: a
+                       ww6 :: b
+                       ww7 :: c
+                       ww8 :: d
+                       w4 :: [Four.Four a b c d] ->
+                     case w4 of wild1 {
+                       [] -> (# ww5, ww6, ww7, ww8 #)
+                       : c1 cs
+                       -> case c1 of ww9 { Four.Four ww10 ww11 ww12 ww13 ->
+                          case $wgo
+                                 ww10
+                                 ww11
+                                 ww12
+                                 ww13
+                                 cs of ww14 { (#,,,#) ww15 ww16 ww17 ww18 ->
+                          (# Data.Semigroup.<> @ a w ww5 ww15,
+                             Data.Semigroup.<> @ b w1 ww6 ww16,
+                             Data.Semigroup.<> @ c w2 ww7 ww17,
+                             Data.Semigroup.<> @ d w3 ww8 ww18 #) } } }
+                 } in
+                 $wgo ww ww1 ww2 ww3 ww4) -}
+a2dfc028ae0a91617c45002a50123a9f
+  $w$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b, GHC.Show.Show c,
+     GHC.Show.Show d) =>
+    GHC.Prim.Int# -> a -> b -> c -> d -> GHC.Show.ShowS
+  {- Arity: 9,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Show.Show c
+                   w3 :: GHC.Show.Show d
+                   ww :: GHC.Prim.Int#
+                   ww1 :: a
+                   ww2 :: b
+                   ww3 :: c
+                   ww4 :: d ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w Four.$fShowFour3 ww1
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ b w1 Four.$fShowFour3 ww2
+                 } in
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ c w2 Four.$fShowFour3 ww3
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ d w3 Four.$fShowFour3 ww4
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ x :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Four.$fShowFour2
+                       (f (GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.showSpace1
+                             (f1
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (f2 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x)))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
+2d6179dc7f1fe09d6156998c77b570ad
+  $wa ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c,
+     Test.QuickCheck.Arbitrary.Arbitrary d) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> (# a, b, c, d #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   @ d
+                   w :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   w1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   w2 :: Test.QuickCheck.Arbitrary.Arbitrary c
+                   w3 :: Test.QuickCheck.Arbitrary.Arbitrary d
+                   w4 :: Test.QuickCheck.Random.QCGen
+                   w5 :: GHC.Types.Int ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case w4
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } } }
+                 } in
+                 let {
+                   ds3 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds2 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } } }
+                 } in
+                 (# (Test.QuickCheck.Arbitrary.arbitrary @ a w)
+                      `cast`
+                    (Test.QuickCheck.Gen.NTCo:Gen[0] <a>_R)
+                      (case ds1 of wild { (,) r1 r2 -> r1 })
+                      w5,
+                    (Test.QuickCheck.Arbitrary.arbitrary @ b w1)
+                      `cast`
+                    (Test.QuickCheck.Gen.NTCo:Gen[0] <b>_R)
+                      (case ds2 of wild { (,) r1 r2 -> r1 })
+                      w5,
+                    (Test.QuickCheck.Arbitrary.arbitrary @ c w2)
+                      `cast`
+                    (Test.QuickCheck.Gen.NTCo:Gen[0] <c>_R)
+                      (case ds3 of wild { (,) r1 r2 -> r1 })
+                      w5,
+                    (Test.QuickCheck.Arbitrary.arbitrary @ d w3)
+                      `cast`
+                    (Test.QuickCheck.Gen.NTCo:Gen[0] <d>_R)
+                      (case ds3 of wild { (,) r1 r2 ->
+                       case r2
+                              `cast`
+                            (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                       case System.Random.TF.Gen.$wtfGenSplit
+                              ww1
+                              ww2
+                              ww3
+                              ww4 of ww7 { (#,#) ww8 ww9 ->
+                       ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) } } })
+                      w5 #)) -}
+d46966827c409e55c31f02ab71680f33
+  data Four a b c d = Four a b c d
+    Promotable
+c91689e604507ffe5622768389f3b16c
+  type FourAssoc =
+    Four.Four
+      GHC.Base.String GHC.Base.String GHC.Base.String GHC.Base.String
+    -> Four.Four
+         GHC.Base.String GHC.Base.String GHC.Base.String GHC.Base.String
+    -> Four.Four
+         GHC.Base.String GHC.Base.String GHC.Base.String GHC.Base.String
+    -> GHC.Types.Bool
+abae202d0095e17bf4ef7f7caf394dca
+  semigroupFourAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   $dEq :: GHC.Classes.Eq m
+                   $dSemigroup :: Data.Semigroup.Semigroup m
+                   a :: m
+                   b :: m
+                   c :: m ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)) -}
+instance Test.QuickCheck.Arbitrary.Arbitrary [Four.Four]
+  = Four.$fArbitraryFour
+instance GHC.Classes.Eq [Four.Four] = Four.$fEqFour
+instance Data.Semigroup.Semigroup [Four.Four]
+  = Four.$fSemigroupFour
+instance GHC.Show.Show [Four.Four] = Four.$fShowFour
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

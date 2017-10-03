@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/bin"
-libdir     = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/lib/x86_64-linux-ghc-7.10.3/Monoid-0.1.0.0-2DwV2LGLXUsKBvW2cIESNv"
+libdir     = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/lib/x86_64-linux-ghc-7.10.3/Monoid-0.1.0.0-36px53ZPhG84BimjxB5yeC"
 datadir    = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/share/x86_64-linux-ghc-7.10.3/Monoid-0.1.0.0"
 libexecdir = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/libexec"
 sysconfdir = "/home/vasiliy/TestAll/Haskell/Monoid/.stack-work/install/x86_64-linux/lts-9.5/7.10.3/etc"

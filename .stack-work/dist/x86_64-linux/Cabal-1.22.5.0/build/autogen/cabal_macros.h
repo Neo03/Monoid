@@ -14,6 +14,13 @@
   (major1) == 4 && (major2) <  8 || \
   (major1) == 4 && (major2) == 8 && (minor) <= 2)
 
+/* package mtl-2.2.1 */
+#define VERSION_mtl "2.2.1"
+#define MIN_VERSION_mtl(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  2 || \
+  (major1) == 2 && (major2) == 2 && (minor) <= 1)
+
 /* package semigroups-0.18.3 */
 #define VERSION_semigroups "0.18.3"
 #define MIN_VERSION_semigroups(major1,major2,minor) (\
@@ -98,5 +105,5 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "Monoi_2DwV2LGLXUsKBvW2cIESNv"
+#define CURRENT_PACKAGE_KEY "Monoi_36px53ZPhG84BimjxB5yeC"
 

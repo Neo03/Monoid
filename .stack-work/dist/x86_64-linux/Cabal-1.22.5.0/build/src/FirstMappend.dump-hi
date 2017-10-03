@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-09-24 17:19:33.168839 UTC
+2017-09-29 11:56:24.328863 UTC
 
-interface Monoi_2DwV2LGLXUsKBvW2cIESNv:FirstMappend 7103
-  interface hash: 2bd4b0dabb1f5798ebe1b9e79af585f7
-  ABI hash: 5ba7c3aafb0dd6c5599f5f6aeb6d46d0
-  export-list hash: fb181653d493e26dca4442b2b84227a0
+interface Monoi_36px53ZPhG84BimjxB5yeC:FirstMappend 7103
+  interface hash: 0b7cb1b3ad007334ebf485b3dd63d4e3
+  ABI hash: 5ac0beaf8e20b1c88b0cb0a7ef270b94
+  export-list hash: 46c229532683588d78217b3abc9a3dbb
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 962af636f8e927040c7daa9c21457292
   sig of: Nothing
@@ -72,7 +72,7 @@ import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fArbitraryFirst' ::
     Test.QuickCheck.Arbitrary.Arbitrary a =>
     Test.QuickCheck.Arbitrary.Arbitrary (FirstMappend.First' a)
@@ -84,7 +84,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                   @ (FirstMappend.First' a)
                   (FirstMappend.$fArbitraryFirst'_$carbitrary @ a $dArbitrary)
                   (FirstMappend.$fArbitraryFirst'_$cshrink @ a $dArbitrary) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fArbitraryFirst'1 ::
     Test.QuickCheck.Arbitrary.Arbitrary a =>
     Test.QuickCheck.Random.QCGen
@@ -138,10 +138,10 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                  (Test.QuickCheck.Gen.NTCo:Gen[0] <FirstMappend.First' a>_R)
                    (case ds1 of wild { (,) r1 r2 -> r2 })
                    eta1) -}
-02415aa7827da1d528cebac64970f454
+374ad2e19531283c93a73cd4e9d5e6af
   $fArbitraryFirst'2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fArbitraryFirst'3 ::
     (GHC.Types.Int, Test.QuickCheck.Gen.Gen (FirstMappend.First' a))
   {- HasNoCafRefs, Strictness: m,
@@ -151,7 +151,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                     `cast`
                   (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
                             (FirstMappend.NTCo:First'[0] <a>_N))))) -}
-afc4103e86204803e1bd7cf38e481cd6
+646f0cf036a89a617171b9cdaf7abffe
   $fArbitraryFirst'4 ::
     Test.QuickCheck.Random.QCGen
     -> GHC.Types.Int -> FirstMappend.Optional a
@@ -159,7 +159,7 @@ afc4103e86204803e1bd7cf38e481cd6
      Unfolding: InlineRule (2, True, True)
                 (\ @ a ds :: Test.QuickCheck.Random.QCGen ds1 :: GHC.Types.Int ->
                  FirstMappend.Nada @ a) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fArbitraryFirst'_$carbitrary ::
     Test.QuickCheck.Arbitrary.Arbitrary a =>
     Test.QuickCheck.Gen.Gen (FirstMappend.First' a)
@@ -172,7 +172,7 @@ afc4103e86204803e1bd7cf38e481cd6
                  <Test.QuickCheck.Arbitrary.Arbitrary a>_R
                  ->_R Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
                                <FirstMappend.First' a>_R)) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fArbitraryFirst'_$cshrink ::
     Test.QuickCheck.Arbitrary.Arbitrary a =>
     FirstMappend.First' a -> [FirstMappend.First' a]
@@ -182,7 +182,7 @@ afc4103e86204803e1bd7cf38e481cd6
                    $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
                    ds1 :: FirstMappend.First' a ->
                  GHC.Types.[] @ (FirstMappend.First' a)) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fEqFirst' ::
     GHC.Classes.Eq a => GHC.Classes.Eq (FirstMappend.First' a)
   DFunId[0]
@@ -192,7 +192,7 @@ afc4103e86204803e1bd7cf38e481cd6
                   @ (FirstMappend.First' a)
                   (FirstMappend.$fEqFirst'_$c== @ a $dEq)
                   (FirstMappend.$fEqFirst'_$c/= @ a $dEq) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fEqFirst'_$c/= ::
     GHC.Classes.Eq a =>
     FirstMappend.First' a -> FirstMappend.First' a -> GHC.Types.Bool
@@ -206,7 +206,7 @@ afc4103e86204803e1bd7cf38e481cd6
                  ->_R Sym (FirstMappend.NTCo:First'[0]) <a>_N
                  ->_R Sym (FirstMappend.NTCo:First'[0]) <a>_N
                  ->_R <GHC.Types.Bool>_R) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fEqFirst'_$c/=1 ::
     GHC.Classes.Eq a =>
     FirstMappend.Optional a
@@ -229,7 +229,7 @@ afc4103e86204803e1bd7cf38e481cd6
                         -> case GHC.Classes.== @ a $dEq a2 b1 of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fEqFirst'_$c== ::
     GHC.Classes.Eq a =>
     FirstMappend.First' a -> FirstMappend.First' a -> GHC.Types.Bool
@@ -243,7 +243,7 @@ afc4103e86204803e1bd7cf38e481cd6
                  ->_R Sym (FirstMappend.NTCo:First'[0]) <a>_N
                  ->_R Sym (FirstMappend.NTCo:First'[0]) <a>_N
                  ->_R <GHC.Types.Bool>_R) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fEqFirst'_$c==1 ::
     GHC.Classes.Eq a =>
     FirstMappend.Optional a
@@ -264,7 +264,7 @@ afc4103e86204803e1bd7cf38e481cd6
                    -> case ds1 of wild1 {
                         FirstMappend.Nada -> GHC.Types.False
                         FirstMappend.Only b1 -> GHC.Classes.== @ a $dEq a1 b1 } }) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fEqOptional ::
     GHC.Classes.Eq a => GHC.Classes.Eq (FirstMappend.Optional a)
   DFunId[0]
@@ -274,7 +274,7 @@ afc4103e86204803e1bd7cf38e481cd6
                   @ (FirstMappend.Optional a)
                   (FirstMappend.$fEqFirst'_$c==1 @ a $dEq)
                   (FirstMappend.$fEqFirst'_$c/=1 @ a $dEq) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fMonoidFirst' :: GHC.Base.Monoid (FirstMappend.First' a)
   DFunId[0]
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -285,22 +285,22 @@ afc4103e86204803e1bd7cf38e481cd6
                   (Sym (FirstMappend.NTCo:First'[0]) <a>_N)
                   (FirstMappend.$fMonoidFirst'_$cmappend @ a)
                   (FirstMappend.$fMonoidFirst'_$cmconcat @ a) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fMonoidFirst'1 :: [FirstMappend.First' a] -> FirstMappend.First' a
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fMonoidFirst'_$cmappend ::
     FirstMappend.First' a
     -> FirstMappend.First' a -> FirstMappend.First' a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
      Unfolding: InlineRule (0, True, True) FirstMappend.firstMappend -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fMonoidFirst'_$cmconcat ::
     [FirstMappend.First' a] -> FirstMappend.First' a
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: (\ @ a eta :: [FirstMappend.First' a] ->
                  FirstMappend.$fMonoidFirst'1 @ a eta) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fShowFirst' ::
     GHC.Show.Show a => GHC.Show.Show (FirstMappend.First' a)
   DFunId[0]
@@ -311,46 +311,46 @@ afc4103e86204803e1bd7cf38e481cd6
                   (FirstMappend.$fShowFirst'_$cshowsPrec @ a $dShow)
                   (FirstMappend.$fShowFirst'_$cshow @ a $dShow)
                   (FirstMappend.$fShowFirst'_$cshowList @ a $dShow) -}
-748b40c07ac80a30dcd9cdef5f1c6e13
+eb546d41ce4c549b5022ce3bc73f27eb
   $fShowFirst'1 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
-3e0b9dc6b5c44acd9b44817c492b0be6
+5bb5c1120f7284fd27e61e8aca7059fb
   $fShowFirst'10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    FirstMappend.$fShowFirst'8
                    FirstMappend.$fShowFirst'9) -}
-4f3fa339cc2d6f0c2ff61597c2edbffb
+111e9dcaa8b8d03a5982afa604461387
   $fShowFirst'2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
-0cbf8822bf5ad89902d469aaf4028eab
+f435164ec105681fea605f1301114671
   $fShowFirst'3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "getFirst' = "#) -}
-2834571f5031f4b752761e91c1688b18
+09078c750dc5a19fc33103d644474368
   $fShowFirst'4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "First' {"#) -}
-1bf8290d21cb64938f90b3877b7cfe20
+563f40741855695ccde6bb140f801e49
   $fShowFirst'5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Only "#) -}
-5945b6d142ce9a6b49018f1c0bd081f8
+d539041bdb00363d125b23189058efb4
   $fShowFirst'6 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
-8b96e63fd64eba380f85dcb1a185c16c
+e0241977398dfd87e445b3750c3beba3
   $fShowFirst'7 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    FirstMappend.$fShowFirst'8) -}
-53032c5e3d81c3f380a52f2ad29f982a
+0c2688d516a4423dbe57029180751a6c
   $fShowFirst'8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Nada"#) -}
-4f487bab1000915eed5d90a68bf814d0
+cca1408896a7ed01087d2c5589a07c4e
   $fShowFirst'9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    FirstMappend.$fShowFirst'2
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fShowFirst'_$cshow ::
     GHC.Show.Show a => FirstMappend.First' a -> GHC.Base.String
   {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U>,
@@ -375,7 +375,7 @@ afc4103e86204803e1bd7cf38e481cd6
                                  FirstMappend.$fShowFirst'6
                                  b1
                                  FirstMappend.$fShowFirst'9) }))) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fShowFirst'_$cshowList ::
     GHC.Show.Show a => [FirstMappend.First' a] -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
@@ -392,7 +392,7 @@ afc4103e86204803e1bd7cf38e481cd6
                       FirstMappend.$fShowFirst'1)
                    eta
                    eta1) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $fShowFirst'_$cshowsPrec ::
     GHC.Show.Show a =>
     GHC.Types.Int -> FirstMappend.First' a -> GHC.Show.ShowS
@@ -405,7 +405,7 @@ afc4103e86204803e1bd7cf38e481cd6
                    w2 :: FirstMappend.First' a ->
                  case w1 of ww { GHC.Types.I# ww1 ->
                  FirstMappend.$w$cshowsPrec @ a w ww1 w2 }) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fShowFirst'_$cshowsPrec1 ::
     GHC.Show.Show a =>
     GHC.Types.Int -> FirstMappend.Optional a -> GHC.Show.ShowS
@@ -437,7 +437,7 @@ afc4103e86204803e1bd7cf38e481cd6
                                 @ GHC.Types.Char
                                 FirstMappend.$fShowFirst'5
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1))) } } }) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fShowOptional ::
     GHC.Show.Show a => GHC.Show.Show (FirstMappend.Optional a)
   DFunId[0]
@@ -448,7 +448,7 @@ afc4103e86204803e1bd7cf38e481cd6
                   (FirstMappend.$fShowFirst'_$cshowsPrec1 @ a $dShow)
                   (FirstMappend.$fShowOptional_$cshow @ a $dShow)
                   (FirstMappend.$fShowOptional_$cshowList @ a $dShow) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fShowOptional_$cshow ::
     GHC.Show.Show a => FirstMappend.Optional a -> GHC.Base.String
   {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
@@ -467,7 +467,7 @@ afc4103e86204803e1bd7cf38e481cd6
                            FirstMappend.$fShowFirst'6
                            b1
                            (GHC.Types.[] @ GHC.Types.Char)) }) -}
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   $fShowOptional_$cshowList ::
     GHC.Show.Show a => [FirstMappend.Optional a] -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
@@ -484,7 +484,7 @@ afc4103e86204803e1bd7cf38e481cd6
                       FirstMappend.$fShowFirst'1)
                    eta
                    eta1) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   $w$cshowsPrec ::
     GHC.Show.Show a =>
     GHC.Prim.Int# -> FirstMappend.First' a -> GHC.Show.ShowS
@@ -523,19 +523,19 @@ afc4103e86204803e1bd7cf38e481cd6
                         @ GHC.Types.Char
                         GHC.Show.shows9
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   newtype First' a = First' {getFirst' :: FirstMappend.Optional a}
     Promotable
-e4603e79f51037dabd264116a9bab4d0
+22fb332cf4316e2608f1fe7f8ee5d901
   type FirstMappend =
     FirstMappend.First' GHC.Base.String
     -> FirstMappend.First' GHC.Base.String
     -> FirstMappend.First' GHC.Base.String
     -> GHC.Types.Bool
-3da3d2baba77f1bf23f31c33fe1b43f3
+9e985dacee211e2d73af4d374b8d76a5
   data Optional a = Nada | Only a
     Promotable
-78a9e34675fd377633911fe1509b57ac
+05a8b76237b4ba1a780e41197d60f681
   firstMappend ::
     FirstMappend.First' a
     -> FirstMappend.First' a -> FirstMappend.First' a
@@ -548,7 +548,7 @@ e4603e79f51037dabd264116a9bab4d0
                    -> (FirstMappend.Only @ a x)
                         `cast`
                       (Sym (FirstMappend.NTCo:First'[0]) <a>_N) }) -}
-a325a485b1707f5801bb8ff96ee41620
+0454ec7739c0e5d6d5fb6cef8f8d51c7
   getFirst' :: FirstMappend.First' a -> FirstMappend.Optional a
   RecSel FirstMappend.First'
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
@@ -558,12 +558,12 @@ a325a485b1707f5801bb8ff96ee41620
                 (forall a.
                  <FirstMappend.First' a>_R
                  ->_R FirstMappend.NTCo:First'[0] <a>_N) -}
-340e94db2647d1f03d5d29dda685bc2f
+cf5137bd38bf5aaafa699a837b7cdd11
   getFirst'1 :: FirstMappend.First' a -> FirstMappend.First' a
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, True)
                 (\ @ a ds :: FirstMappend.First' a -> ds) -}
-cd54bb5ff65154787ac974614d095994
+7b53378b7ba1526b92d9c1fe863719ac
   monoidAssoc ::
     (GHC.Classes.Eq m, GHC.Base.Monoid m) =>
     m -> m -> m -> GHC.Types.Bool
@@ -588,7 +588,7 @@ cd54bb5ff65154787ac974614d095994
                       $dMonoid
                       (GHC.Base.mappend @ m $dMonoid a b)
                       c)) -}
-cb2e4913dd2103279a5456f68139385e
+e900ae8658ba4a65b609320295299ef3
   monoidLeftIdentity ::
     (GHC.Classes.Eq m, GHC.Base.Monoid m) => m -> GHC.Types.Bool
   {- Arity: 3, HasNoCafRefs,
@@ -603,7 +603,7 @@ cb2e4913dd2103279a5456f68139385e
                    $dEq
                    (GHC.Base.mappend @ m $dMonoid m1 (GHC.Base.mempty @ m $dMonoid))
                    m1) -}
-7f4f233de0e00f77677c0c6a0f214596
+2b221217290ddad3a51dcb2f7519607e
   monoidRightIdentity ::
     (GHC.Classes.Eq m, GHC.Base.Monoid m) => m -> GHC.Types.Bool
   {- Arity: 3, HasNoCafRefs,

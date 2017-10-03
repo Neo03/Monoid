@@ -17,9 +17,20 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
                     ,  FirstMappend
+                    ,  Trivial
+                    ,  Ident
+                    ,  Two
+                    ,  Three
+                    ,  Four
+                    ,  BoolConj
+                    ,  BoolDisj
+                    ,  Or
+                    ,  Combine
+                    ,  Comp
   build-depends:       base >= 4.7 && < 5
                     ,  QuickCheck
                     ,  semigroups
+                    ,  mtl
   default-language:    Haskell2010
 
 executable Monoid-exe

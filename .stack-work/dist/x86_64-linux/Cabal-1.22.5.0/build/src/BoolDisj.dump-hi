@@ -1,0 +1,456 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-29 11:56:22.472023 UTC
+
+interface Monoi_36px53ZPhG84BimjxB5yeC:BoolDisj 7103
+  interface hash: c4895a1f464cb654647ea4c414e9a487
+  ABI hash: c1c47dfef3b596e3d29feeefcc3cf065
+  export-list hash: ee226d65702b5ce27d57debec3611b75
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BoolDisj.semigroupDisjAssoc
+  BoolDisj.BoolDisjAssoc
+module dependencies:
+package dependencies: QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      array-0.5.1.1@array_GYDb2ArsFSSIHqSGBYOjLV base-4.8.2.0*
+                      binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ
+                      bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS
+                      containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe
+                      deepseq-1.4.2.0@deeps_5CvZ3NruJCLG6fI7ct2neg
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW
+                      random-1.1@rando_ErsaxGdx2qN9xGxJzmzYmh
+                      semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp*
+                      tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM template-haskell-2.10.0.0
+                      text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9
+                      tf-random-0.5@tfran_0KoOJ8vyUWi63yKroqCxAy
+                      time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV
+                      transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ
+                      unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ:Data.Binary.Generic
+         bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS:Data.ByteString.Builder
+         hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU:Data.Hashable.Generic
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Show
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Format.Parse
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntMap.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntSet.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Map.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Sequence
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW:Control.Monad.Primitive
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.List.NonEmpty
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup
+                         tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Arbitrary 8fd714c1aa0b696271aa178223178a73
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Gen 32cc76b256b1f90127c4900263769201
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup ab01b5704defdf2bfd4bd9d2261dc02e
+cfce176f567a3dc22f773f583c227026
+  $fArbitraryBoolDisj ::
+    Test.QuickCheck.Arbitrary.Arbitrary BoolDisj.BoolDisj
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ BoolDisj.BoolDisj
+                  BoolDisj.$fArbitraryBoolDisj_$carbitrary
+                  BoolDisj.$fArbitraryBoolDisj_$s$dmshrink -}
+cfce176f567a3dc22f773f583c227026
+  $fArbitraryBoolDisj1 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> BoolDisj.BoolDisj
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ r :: Test.QuickCheck.Random.QCGen
+                   n :: GHC.Types.Int ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case r `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } } }
+                 } in
+                 (Test.QuickCheck.Gen.elements
+                    @ BoolDisj.BoolDisj
+                    (GHC.Types.:
+                       @ BoolDisj.BoolDisj
+                       (Test.QuickCheck.Arbitrary.$wa6
+                          (case ds1 of wild { (,) r1 r2 -> r1 }))
+                         `cast`
+                       (Sym (BoolDisj.NTCo:BoolDisj[0]))
+                       (GHC.Types.:
+                          @ BoolDisj.BoolDisj
+                          (Test.QuickCheck.Arbitrary.$wa6
+                             (case ds2 of wild { (,) r1 r2 -> r1 }))
+                            `cast`
+                          (Sym (BoolDisj.NTCo:BoolDisj[0]))
+                          (GHC.Types.[] @ BoolDisj.BoolDisj))))
+                   `cast`
+                 (Test.QuickCheck.Gen.NTCo:Gen[0] <BoolDisj.BoolDisj>_R)
+                   (case ds2 of wild { (,) r1 r2 -> r2 })
+                   n) -}
+cfce176f567a3dc22f773f583c227026
+  $fArbitraryBoolDisj_$carbitrary ::
+    Test.QuickCheck.Gen.Gen BoolDisj.BoolDisj
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BoolDisj.$fArbitraryBoolDisj1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0] <BoolDisj.BoolDisj>_R)) -}
+cfce176f567a3dc22f773f583c227026
+  $fArbitraryBoolDisj_$s$dmshrink ::
+    BoolDisj.BoolDisj -> [BoolDisj.BoolDisj]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (-1, True, True)
+                (\ ds1 :: BoolDisj.BoolDisj -> GHC.Types.[] @ BoolDisj.BoolDisj) -}
+cfce176f567a3dc22f773f583c227026
+  $fEqBoolDisj :: GHC.Classes.Eq BoolDisj.BoolDisj
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ BoolDisj.BoolDisj
+                  BoolDisj.$fEqBoolDisj_$c==
+                  BoolDisj.$fEqBoolDisj_$c/= -}
+cfce176f567a3dc22f773f583c227026
+  $fEqBoolDisj_$c/= ::
+    BoolDisj.BoolDisj -> BoolDisj.BoolDisj -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEqBool_$c/=
+                  `cast`
+                (Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R <GHC.Types.Bool>_R) -}
+cfce176f567a3dc22f773f583c227026
+  $fEqBoolDisj_$c== ::
+    BoolDisj.BoolDisj -> BoolDisj.BoolDisj -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEqBool_$c==
+                  `cast`
+                (Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R <GHC.Types.Bool>_R) -}
+cfce176f567a3dc22f773f583c227026
+  $fSemigroupBoolDisj :: Data.Semigroup.Semigroup BoolDisj.BoolDisj
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ BoolDisj.BoolDisj
+                  BoolDisj.$fSemigroupBoolDisj_$c<>
+                  BoolDisj.$fSemigroupBoolDisj_$csconcat
+                  BoolDisj.$fSemigroupBoolDisj_$cstimes -}
+cfce176f567a3dc22f773f583c227026
+  $fSemigroupBoolDisj_$c<> ::
+    BoolDisj.BoolDisj -> BoolDisj.BoolDisj -> BoolDisj.BoolDisj
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.||
+                  `cast`
+                (Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R Sym (BoolDisj.NTCo:BoolDisj[0])
+                 ->_R Sym (BoolDisj.NTCo:BoolDisj[0])) -}
+cfce176f567a3dc22f773f583c227026
+  $fSemigroupBoolDisj_$csconcat ::
+    Data.List.NonEmpty.NonEmpty BoolDisj.BoolDisj -> BoolDisj.BoolDisj
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.List.NonEmpty.NonEmpty BoolDisj.BoolDisj ->
+                 case w of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 BoolDisj.$fSemigroupBoolDisj_go ww1 ww2 }) -}
+cfce176f567a3dc22f773f583c227026
+  $fSemigroupBoolDisj_$cstimes ::
+    GHC.Real.Integral b => b -> BoolDisj.BoolDisj -> BoolDisj.BoolDisj
+  {- Arity: 3,
+     Strictness: <S(SLLLLLLLL),U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ b
+                   $dIntegral :: GHC.Real.Integral b
+                   eta :: b
+                   eta1 :: BoolDisj.BoolDisj ->
+                 let {
+                   $dReal :: GHC.Real.Real b = GHC.Real.$p1Integral @ b $dIntegral
+                 } in
+                 case GHC.Classes.<=
+                        @ b
+                        (GHC.Real.$p2Real @ b $dReal)
+                        eta
+                        (GHC.Num.fromInteger
+                           @ b
+                           (GHC.Real.$p1Real @ b $dReal)
+                           __integer 0) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b $dIntegral
+                      } in
+                      let {
+                        $dEnum :: GHC.Enum.Enum b = GHC.Real.$p2Integral @ b $dIntegral
+                      } in
+                      let {
+                        a31 :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal1
+                      } in
+                      let {
+                        $dEq :: GHC.Classes.Eq b = GHC.Classes.$p1Ord @ b a31
+                      } in
+                      let {
+                        $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                      } in
+                      letrec {
+                        f :: BoolDisj.BoolDisj -> b -> BoolDisj.BoolDisj {- Arity: 2 -}
+                        = \ x :: BoolDisj.BoolDisj y :: b ->
+                          case GHC.Real.even @ b $dIntegral y of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ b
+                                      $dEq
+                                      y
+                                      (GHC.Num.fromInteger @ b $dNum __integer 1) of wild2 {
+                                 GHC.Types.False
+                                 -> let {
+                                      $dReal2 :: GHC.Real.Real b
+                                      = GHC.Real.$p1Integral @ b $dIntegral
+                                    } in
+                                    let {
+                                      $dEnum1 :: GHC.Enum.Enum b
+                                      = GHC.Real.$p2Integral @ b $dIntegral
+                                    } in
+                                    let {
+                                      a32 :: GHC.Classes.Ord b = GHC.Real.$p2Real @ b $dReal2
+                                    } in
+                                    let {
+                                      $dEq1 :: GHC.Classes.Eq b = GHC.Classes.$p1Ord @ b a32
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal2
+                                    } in
+                                    letrec {
+                                      g :: BoolDisj.BoolDisj
+                                           -> b -> BoolDisj.BoolDisj -> BoolDisj.BoolDisj
+                                        {- Arity: 3 -}
+                                      = \ x1 :: BoolDisj.BoolDisj y1 :: b z :: BoolDisj.BoolDisj ->
+                                        case GHC.Real.even @ b $dIntegral y1 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Classes.==
+                                                    @ b
+                                                    $dEq1
+                                                    y1
+                                                    (GHC.Num.fromInteger
+                                                       @ b
+                                                       $dNum1
+                                                       __integer 1) of wild4 {
+                                               GHC.Types.False
+                                               -> g (BoolDisj.$fSemigroupBoolDisj_$c<> x1 x1)
+                                                    (GHC.Real.quot
+                                                       @ b
+                                                       $dIntegral
+                                                       (GHC.Enum.pred @ b $dEnum1 y1)
+                                                       (GHC.Num.fromInteger @ b $dNum1 __integer 2))
+                                                    (BoolDisj.$fSemigroupBoolDisj_$c<> x1 z)
+                                               GHC.Types.True
+                                               -> BoolDisj.$fSemigroupBoolDisj_$c<> x1 z }
+                                          GHC.Types.True
+                                          -> g (BoolDisj.$fSemigroupBoolDisj_$c<> x1 x1)
+                                               (GHC.Real.quot
+                                                  @ b
+                                                  $dIntegral
+                                                  y1
+                                                  (GHC.Num.fromInteger @ b $dNum1 __integer 2))
+                                               z }
+                                    } in
+                                    g (BoolDisj.$fSemigroupBoolDisj_$c<> x x)
+                                      (GHC.Real.quot
+                                         @ b
+                                         $dIntegral
+                                         (GHC.Enum.pred @ b $dEnum y)
+                                         (GHC.Num.fromInteger @ b $dNum __integer 2))
+                                      x
+                                 GHC.Types.True -> x }
+                            GHC.Types.True
+                            -> f (BoolDisj.$fSemigroupBoolDisj_$c<> x x)
+                                 (GHC.Real.quot
+                                    @ b
+                                    $dIntegral
+                                    y
+                                    (GHC.Num.fromInteger @ b $dNum __integer 2)) }
+                      } in
+                      f eta1 eta
+                   GHC.Types.True
+                   -> GHC.Err.error
+                        @ BoolDisj.BoolDisj
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b1 ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b1
+                              "stimes: positive multiplier expected"#)) }) -}
+cfce176f567a3dc22f773f583c227026
+  $fSemigroupBoolDisj_go ::
+    BoolDisj.BoolDisj -> [BoolDisj.BoolDisj] -> BoolDisj.BoolDisj
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+cfce176f567a3dc22f773f583c227026
+  $fShowBoolDisj :: GHC.Show.Show BoolDisj.BoolDisj
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ BoolDisj.BoolDisj
+                  BoolDisj.$fShowBoolDisj_$cshowsPrec
+                  BoolDisj.$fShowBoolDisj_$cshow
+                  BoolDisj.$fShowBoolDisj_$cshowList -}
+cfce176f567a3dc22f773f583c227026
+  $fShowBoolDisj1 :: BoolDisj.BoolDisj -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: BoolDisj.BoolDisj w1 :: GHC.Base.String ->
+                 BoolDisj.$w$cshowsPrec 0 w w1) -}
+a9c4fcdc6069cbaff82c8ad3f5fb2a2d
+  $fShowBoolDisj2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "BoolDisj "#) -}
+cfce176f567a3dc22f773f583c227026
+  $fShowBoolDisj_$cshow :: BoolDisj.BoolDisj -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: BoolDisj.BoolDisj ->
+                 BoolDisj.$fShowBoolDisj_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+cfce176f567a3dc22f773f583c227026
+  $fShowBoolDisj_$cshowList :: [BoolDisj.BoolDisj] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ BoolDisj.BoolDisj
+                   BoolDisj.$fShowBoolDisj1) -}
+cfce176f567a3dc22f773f583c227026
+  $fShowBoolDisj_$cshowsPrec ::
+    GHC.Types.Int -> BoolDisj.BoolDisj -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><L,1*U><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: BoolDisj.BoolDisj
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 BoolDisj.$w$cshowsPrec ww1 w1 w2 }) -}
+cfce176f567a3dc22f773f583c227026
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> BoolDisj.BoolDisj -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   w :: BoolDisj.BoolDisj
+                   w1 :: GHC.Base.String ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       BoolDisj.$fShowBoolDisj2
+                       (case w `cast` (BoolDisj.NTCo:BoolDisj[0]) of wild {
+                          GHC.Types.False -> GHC.Base.++ @ GHC.Types.Char GHC.Show.shows17 x
+                          GHC.Types.True
+                          -> GHC.Base.++ @ GHC.Types.Char GHC.Show.shows16 x })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p w1
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w1)) }) -}
+cfce176f567a3dc22f773f583c227026
+  newtype BoolDisj = BoolDisj GHC.Types.Bool
+    Promotable
+2f13cb54b8f49d45e9b3f158df8b26f6
+  type BoolDisjAssoc =
+    BoolDisj.BoolDisj
+    -> BoolDisj.BoolDisj -> BoolDisj.BoolDisj -> GHC.Types.Bool
+1a7a60024ec14ee6ed15423660b9a5be
+  semigroupDisjAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   $dEq :: GHC.Classes.Eq m
+                   $dSemigroup :: Data.Semigroup.Semigroup m
+                   a1 :: m
+                   b :: m
+                   c :: m ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a1
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a1 b)
+                      c)) -}
+instance Test.QuickCheck.Arbitrary.Arbitrary [BoolDisj.BoolDisj]
+  = BoolDisj.$fArbitraryBoolDisj
+instance GHC.Classes.Eq [BoolDisj.BoolDisj] = BoolDisj.$fEqBoolDisj
+instance Data.Semigroup.Semigroup [BoolDisj.BoolDisj]
+  = BoolDisj.$fSemigroupBoolDisj
+instance GHC.Show.Show [BoolDisj.BoolDisj]
+  = BoolDisj.$fShowBoolDisj
+"SPEC/BoolDisj $dmshrink @ BoolDisj" [ALWAYS] forall $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                      BoolDisj.BoolDisj
+  Test.QuickCheck.Arbitrary.$dmshrink @ BoolDisj.BoolDisj $dArbitrary
+  = BoolDisj.$fArbitraryBoolDisj_$s$dmshrink
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
