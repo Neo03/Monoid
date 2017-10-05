@@ -11,6 +11,8 @@ import Or
 import Combine
 import Comp
 import Validation
+import Accum
+import Acboth
 
 main :: IO ()
 main = do
@@ -28,3 +30,5 @@ main = do
   quickCheck combineAssoc
   quickCheck compAssoc
   quickCheck (semigroupValidAssoc :: ValidationAssoc)
+  quickCheck (semigroupAccumAssoc :: AccumAssoc)
+  quickCheck (semigroupAcbothAssoc :: AcbothAssoc)

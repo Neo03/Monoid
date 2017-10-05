@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-05 07:59:25.721522 UTC
+2017-10-05 09:53:54.854697 UTC
 
 interface main@main:Main 7103
-  interface hash: 8bce43bb0943160687a7afafe22baab8
-  ABI hash: 524a38e735bbc99f60078a042a5737ea
-  export-list hash: 347aebe6c8a0740d45f4759b5981e585
-  orphan hash: 25761e06798e6c2ad5f6b0f8ea080d3c
+  interface hash: aa853f4787f7c49e17f82a99485d6b23
+  ABI hash: cf9637d6cef83205935a1f26330d413a
+  export-list hash: f5828be9862c402a6492c94c63dc9328
+  orphan hash: 95d0211391f0980e521ce084eede40ed
   flag hash: 8a641cc7424fb0224cd12f7ad18774db
   sig of: Nothing
   used TH splices: False
@@ -65,6 +65,8 @@ family instance modules: base-4.8.2.0:Control.Applicative
                          text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
                          unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
                          unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Acboth 56baf5fba1104db8e42a414a3a5c9e0a
+import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Accum 05292eb61506bced7494316e3b5d4146
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:BoolConj 5bf2525c8445cc9d2b3be3e97a66b9a2
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:BoolDisj c1c47dfef3b596e3d29feeefcc3cf065
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Combine 1a06d53f2f38e2e06b238d2be9455645
@@ -82,6 +84,46 @@ import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Test 2
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+f539e710ea13b9a50ac1a1ac3fd55c2c
+  $s$fArbitraryAccumulateBoth1 ::
+    Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering
+    -> [Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds1 :: Acboth.AccumulateBoth
+                            [GHC.Types.Char] GHC.Types.Ordering ->
+                 GHC.Types.[]
+                   @ (Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering)) -}
+3592aa2731048500c9248d996a3ef83d
+  $s$fArbitraryAccumulateBoth3 ::
+    [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ xs :: [GHC.Types.Char] ->
+                 Test.QuickCheck.Arbitrary.shrinkList
+                   @ GHC.Types.Char
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
+                   xs) -}
+2ab48acaf5287210390ddb4245a7d817
+  $s$fArbitraryAccumulateBoth_$s$fArbitrary[] ::
+    Test.QuickCheck.Arbitrary.Arbitrary [GHC.Types.Char]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Types.Char]
+                  (Test.QuickCheck.Arbitrary.$fArbitrary[]_$carbitrary
+                     @ GHC.Types.Char
+                     Test.QuickCheck.Arbitrary.$fArbitraryChar)
+                  Main.$s$fArbitraryAccumulateBoth3 -}
+6839118ba642c0da77e07c82780bf56a
+  $s$fArbitraryAccumulateRight1 ::
+    Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering
+    -> [Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds1 :: Accum.AccumulateRight
+                            [GHC.Types.Char] GHC.Types.Ordering ->
+                 GHC.Types.[]
+                   @ (Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering)) -}
 ee6c9ededff584a4fbefc06a636366b6
   $s$fArbitraryCombine1 ::
     Combine.Combine GHC.Types.Int [GHC.Types.Char]
@@ -90,25 +132,6 @@ ee6c9ededff584a4fbefc06a636366b6
      Unfolding: InlineRule (1, True, True)
                 (\ ds1 :: Combine.Combine GHC.Types.Int [GHC.Types.Char] ->
                  GHC.Types.[] @ (Combine.Combine GHC.Types.Int [GHC.Types.Char])) -}
-533a9da14f2f5009ff0a468997654b38
-  $s$fArbitraryCombine3 :: [GHC.Types.Char] -> [[GHC.Types.Char]]
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ xs :: [GHC.Types.Char] ->
-                 Test.QuickCheck.Arbitrary.shrinkList
-                   @ GHC.Types.Char
-                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
-                   xs) -}
-28e67feb96986c7b1a8e89b6e75679df
-  $s$fArbitraryCombine_$s$fArbitrary[] ::
-    Test.QuickCheck.Arbitrary.Arbitrary [GHC.Types.Char]
-  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
-     Unfolding: DFun:.
-                  @ [GHC.Types.Char]
-                  (Test.QuickCheck.Arbitrary.$fArbitrary[]_$carbitrary
-                     @ GHC.Types.Char
-                     Test.QuickCheck.Arbitrary.$fArbitraryChar)
-                  Main.$s$fArbitraryCombine3 -}
 de7e4da5de3c09f59c0440896b0b637f
   $s$fArbitraryComp1 ::
     Comp.Comp [GHC.Types.Char] -> [Comp.Comp [GHC.Types.Char]]
@@ -191,12 +214,107 @@ a3c335a781b6d9abf4a460d5ebfc9c24
                             [GHC.Types.Char] GHC.Types.Ordering ->
                  GHC.Types.[]
                    @ (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)) -}
-862e15ba1bb6ff41d4aad117d6812071
-  $s$fEqFirst'1 :: GHC.Classes.Eq [GHC.Types.Char]
+f0ce600143ea1a25d6d0385af125e412
+  $s$fEqAccumulateBoth1 :: GHC.Classes.Eq [GHC.Types.Char]
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 GHC.Classes.$fEq[]_$s$fEq[]1 -}
-4ef0667156cd6977d3130671003b7f16
+954f0da8c05672248ca742d109baf0f8
+  $s$fShowAccumulateBoth ::
+    GHC.Show.Show
+      (Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering)
+                  (Acboth.$fShowAccumulateBoth_$cshowsPrec
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowAccumulateBoth3
+                     GHC.Show.$fShowOrdering)
+                  (Acboth.$fShowAccumulateBoth_$cshow
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowAccumulateBoth3
+                     GHC.Show.$fShowOrdering)
+                  Main.$s$fShowAccumulateBoth1 -}
+3c56d6636ee48939d6fe83fe9590402b
+  $s$fShowAccumulateBoth1 ::
+    [Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ eta :: [Acboth.AccumulateBoth
+                             [GHC.Types.Char] GHC.Types.Ordering]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering)
+                   Main.$s$fShowAccumulateBoth2
+                   eta
+                   eta1) -}
+1fb392b6d7a00dfeb417d6d85c3b81c3
+  $s$fShowAccumulateBoth2 ::
+    Acboth.AccumulateBoth [GHC.Types.Char] GHC.Types.Ordering
+    -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w3 :: Acboth.AccumulateBoth
+                           [GHC.Types.Char] GHC.Types.Ordering ->
+                 Acboth.$w$cshowsPrec
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Ordering
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   GHC.Show.$fShowOrdering
+                   0
+                   w3) -}
+5ba183d0138afe03c04f5dff373a9c3c
+  $s$fShowAccumulateBoth3 :: GHC.Show.Show [GHC.Types.Char]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Show.$fShow[]_$s$fShow[]1 -}
+88864636d526e83c7117c31af2dc17dd
+  $s$fShowAccumulateRight ::
+    GHC.Show.Show
+      (Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering)
+                  (Accum.$fShowAccumulateRight_$cshowsPrec
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowAccumulateBoth3
+                     GHC.Show.$fShowOrdering)
+                  (Accum.$fShowAccumulateRight_$cshow
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowAccumulateBoth3
+                     GHC.Show.$fShowOrdering)
+                  Main.$s$fShowAccumulateRight1 -}
+ac81ba8ec91edda5d8fd4debd10cddf1
+  $s$fShowAccumulateRight1 ::
+    [Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ eta :: [Accum.AccumulateRight
+                             [GHC.Types.Char] GHC.Types.Ordering]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering)
+                   Main.$s$fShowAccumulateRight2
+                   eta
+                   eta1) -}
+209bbfbecf81731b4c18e319b6d07bde
+  $s$fShowAccumulateRight2 ::
+    Accum.AccumulateRight [GHC.Types.Char] GHC.Types.Ordering
+    -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w3 :: Accum.AccumulateRight
+                           [GHC.Types.Char] GHC.Types.Ordering ->
+                 Accum.$w$cshowsPrec
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Ordering
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   GHC.Show.$fShowOrdering
+                   0
+                   w3) -}
+6f9dedf7f6b36b59b9526fa890609ccc
   $s$fShowFirst' ::
     GHC.Show.Show (FirstMappend.First' [GHC.Types.Char])
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -204,10 +322,10 @@ a3c335a781b6d9abf4a460d5ebfc9c24
                   @ (FirstMappend.First' [GHC.Types.Char])
                   (FirstMappend.$fShowFirst'_$cshowsPrec
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3)
                   (FirstMappend.$fShowFirst'_$cshow
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3)
                   Main.$s$fShowFirst'1 -}
 522ad3601b7db8412902a6dcc6cd28d3
   $s$fShowFirst'1 ::
@@ -226,12 +344,7 @@ a3c335a781b6d9abf4a460d5ebfc9c24
                       w2)
                    eta
                    eta1) -}
-b7f8737c01de298df8cfa1ea1d336459
-  $s$fShowFirst'2 :: GHC.Show.Show [GHC.Types.Char]
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                GHC.Show.$fShow[]_$s$fShow[]1 -}
-c5e570601bcc51131dfaad9f04cc7b21
+ccaf0d7998e098a661864bccf1e445ee
   $s$fShowFour ::
     GHC.Show.Show
       (Four.Four
@@ -251,13 +364,13 @@ c5e570601bcc51131dfaad9f04cc7b21
                      @ [GHC.Types.Char]
                      @ [GHC.Types.Char]
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3)
                   Main.$s$fShowFour_$s$fShowFour_$cshow
                   Main.$s$fShowFour_$s$fShowFour_$cshowList -}
-a545e2f5bdf5a9f1e1589996c963aab4
+de20e1a0c0bc3726d500366c90ba91ac
   $s$fShowFour_$s$fShowFour_$cshow ::
     Four.Four
       [GHC.Types.Char] [GHC.Types.Char] [GHC.Types.Char] [GHC.Types.Char]
@@ -274,14 +387,14 @@ a545e2f5bdf5a9f1e1589996c963aab4
                    @ [GHC.Types.Char]
                    @ [GHC.Types.Char]
                    @ [GHC.Types.Char]
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-793a7497efa2fd2d888d3049a6ba1530
+ae24367dc22ca9e617358be205fa7a38
   $s$fShowFour_$s$fShowFour_$cshowList ::
     [Four.Four
        [GHC.Types.Char]
@@ -308,21 +421,21 @@ a545e2f5bdf5a9f1e1589996c963aab4
                       @ [GHC.Types.Char]
                       @ [GHC.Types.Char]
                       @ [GHC.Types.Char]
-                      Main.$s$fShowFirst'2
-                      Main.$s$fShowFirst'2
-                      Main.$s$fShowFirst'2
-                      Main.$s$fShowFirst'2
+                      Main.$s$fShowAccumulateBoth3
+                      Main.$s$fShowAccumulateBoth3
+                      Main.$s$fShowAccumulateBoth3
+                      Main.$s$fShowAccumulateBoth3
                       Four.$fShowFour1)
                    eta
                    eta1) -}
-a9022ff6dfaf66a16a3024a094be8806
+4a807ffdb8ffae9e50eb570d25db090e
   $s$fShowIdentity :: GHC.Show.Show (Ident.Identity [GHC.Types.Char])
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ (Ident.Identity [GHC.Types.Char])
                   (Ident.$fShowIdentity_$cshowsPrec
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3)
                   Main.$s$fShowIdentity2
                   Main.$s$fShowIdentity1 -}
 1a2620ee78d791ef27304df5d27af2a3
@@ -361,7 +474,7 @@ ba95621da389a54312c393fcf3183e6b
                             @ GHC.Types.Char
                             GHC.Show.shows6
                             (GHC.Types.[] @ GHC.Types.Char))))) -}
-66ec34e7c8ba72b708209821f2d5a983
+50192b0926ce57b0a72bacb413a143ee
   $s$fShowOr ::
     GHC.Show.Show (Or.Or [GHC.Types.Char] GHC.Types.Ordering)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -370,12 +483,12 @@ ba95621da389a54312c393fcf3183e6b
                   (Or.$fShowOr_$cshowsPrec
                      @ [GHC.Types.Char]
                      @ GHC.Types.Ordering
-                     Main.$s$fShowFirst'2
+                     Main.$s$fShowAccumulateBoth3
                      GHC.Show.$fShowOrdering)
                   (Or.$fShowOr_$cshow
                      @ [GHC.Types.Char]
                      @ GHC.Types.Ordering
-                     Main.$s$fShowFirst'2
+                     Main.$s$fShowAccumulateBoth3
                      GHC.Show.$fShowOrdering)
                   Main.$s$fShowOr1 -}
 ceb2c663f61f66498cf4ceeaeb5cb5cc
@@ -401,7 +514,7 @@ ceb2c663f61f66498cf4ceeaeb5cb5cc
                    GHC.Show.$fShowOrdering
                    0
                    w3) -}
-0a8a1dd7dc54deee966ff8131ee9d478
+d1f4c4263d90b584bee1d0c0ec5ef6db
   $s$fShowThree ::
     GHC.Show.Show
       (Three.Three [GHC.Types.Char] [GHC.Types.Char] [GHC.Types.Char])
@@ -412,12 +525,12 @@ ceb2c663f61f66498cf4ceeaeb5cb5cc
                      @ [GHC.Types.Char]
                      @ [GHC.Types.Char]
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3)
                   Main.$s$fShowThree_$s$fShowThree_$cshow
                   Main.$s$fShowThree_$s$fShowThree_$cshowList -}
-5d262091f3f5224f337bf8f3a64491e8
+df9013678e780bd35066c39600f0c009
   $s$fShowThree_$s$fShowThree_$cshow ::
     Three.Three [GHC.Types.Char] [GHC.Types.Char] [GHC.Types.Char]
     -> GHC.Base.String
@@ -429,13 +542,13 @@ ceb2c663f61f66498cf4ceeaeb5cb5cc
                    @ [GHC.Types.Char]
                    @ [GHC.Types.Char]
                    @ [GHC.Types.Char]
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9f86b424f69712f919b314ce7968d31e
+9219b799b7464b0a5c6c15e59b9577d3
   $s$fShowThree_$s$fShowThree_$cshowList ::
     [Three.Three [GHC.Types.Char] [GHC.Types.Char] [GHC.Types.Char]]
     -> GHC.Show.ShowS
@@ -450,13 +563,13 @@ ceb2c663f61f66498cf4ceeaeb5cb5cc
                       @ [GHC.Types.Char]
                       @ [GHC.Types.Char]
                       @ [GHC.Types.Char]
-                      Main.$s$fShowFirst'2
-                      Main.$s$fShowFirst'2
-                      Main.$s$fShowFirst'2
+                      Main.$s$fShowAccumulateBoth3
+                      Main.$s$fShowAccumulateBoth3
+                      Main.$s$fShowAccumulateBoth3
                       Three.$fShowThree1)
                    eta
                    eta1) -}
-7828d61f7a9062e0fdbd2cb91fd7083d
+c90cf45e1b53528a145ccd338b79f259
   $s$fShowTwo ::
     GHC.Show.Show (Two.Two [GHC.Types.Char] [GHC.Types.Char])
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -465,8 +578,8 @@ ceb2c663f61f66498cf4ceeaeb5cb5cc
                   (Two.$fShowTwo_$cshowsPrec
                      @ [GHC.Types.Char]
                      @ [GHC.Types.Char]
-                     Main.$s$fShowFirst'2
-                     Main.$s$fShowFirst'2)
+                     Main.$s$fShowAccumulateBoth3
+                     Main.$s$fShowAccumulateBoth3)
                   Main.$s$fShowTwo_$s$fShowTwo_$cshow
                   Main.$s$fShowTwo1 -}
 f9ffd3b95e38498154fdcb14a48a92bd
@@ -494,7 +607,7 @@ f9ffd3b95e38498154fdcb14a48a92bd
                    0
                    ww3
                    ww4 }) -}
-562b6c59881464a9bb4e90b741d8a9ee
+da5b89105cc20bcc55dee2944f4df2cc
   $s$fShowTwo_$s$fShowTwo_$cshow ::
     Two.Two [GHC.Types.Char] [GHC.Types.Char] -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
@@ -503,12 +616,12 @@ f9ffd3b95e38498154fdcb14a48a92bd
                  Two.$fShowTwo_$cshowsPrec
                    @ [GHC.Types.Char]
                    @ [GHC.Types.Char]
-                   Main.$s$fShowFirst'2
-                   Main.$s$fShowFirst'2
+                   Main.$s$fShowAccumulateBoth3
+                   Main.$s$fShowAccumulateBoth3
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-31a957e281a27de1cd46948a48edee67
+4a50b461c461b1bad887f1626a2804c1
   $s$fShowValidation ::
     GHC.Show.Show
       (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)
@@ -518,12 +631,12 @@ f9ffd3b95e38498154fdcb14a48a92bd
                   (Validation.$fShowValidation_$cshowsPrec
                      @ [GHC.Types.Char]
                      @ GHC.Types.Ordering
-                     Main.$s$fShowFirst'2
+                     Main.$s$fShowAccumulateBoth3
                      GHC.Show.$fShowOrdering)
                   (Validation.$fShowValidation_$cshow
                      @ [GHC.Types.Char]
                      @ GHC.Types.Ordering
-                     Main.$s$fShowFirst'2
+                     Main.$s$fShowAccumulateBoth3
                      GHC.Show.$fShowOrdering)
                   Main.$s$fShowValidation1 -}
 44ac4582171a164b202dcd11bd03a96a
@@ -553,21 +666,21 @@ f9ffd3b95e38498154fdcb14a48a92bd
                    GHC.Show.$fShowOrdering
                    0
                    w3) -}
-133b6ebebcb8d0bfe9b9cbb0d5481f2d
-  $smonoidLeftIdentity ::
+3b6e1e662a824162508d7da27519c122
+  $smonoidRightIdentity ::
     FirstMappend.First' GHC.Base.String -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ m1 :: FirstMappend.First' GHC.Base.String ->
                  FirstMappend.$fEqFirst'_$c==
                    @ [GHC.Types.Char]
-                   Main.$s$fEqFirst'1
+                   Main.$s$fEqAccumulateBoth1
                    (FirstMappend.$fMonoidFirst'_$cmappend
                       @ [GHC.Types.Char]
-                      m1
                       (FirstMappend.Nada @ [GHC.Types.Char])
                         `cast`
-                      (Sym (FirstMappend.NTCo:First'[0]) <[GHC.Types.Char]>_N))
+                      (Sym (FirstMappend.NTCo:First'[0]) <[GHC.Types.Char]>_N)
+                      m1)
                    m1) -}
 ee6590a2ab0ffaa5074d93f2d3fc4c03
   main :: GHC.Types.IO ()
@@ -591,7 +704,25 @@ e3bd864fe81295cabb6b36ca45539f6f
                                                                   GHC.Types.Char
   Test.QuickCheck.Arbitrary.$fArbitrary[] @ GHC.Types.Char
                                           $dArbitrary
-  = Main.$s$fArbitraryCombine_$s$fArbitrary[]
+  = Main.$s$fArbitraryAccumulateBoth_$s$fArbitrary[]
+"SPEC/Main $fShowAccumulateBoth @ [Char] @ Ordering" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                                 [GHC.Types.Char]
+                                                                     $dShow1 :: GHC.Show.Show
+                                                                                  GHC.Types.Ordering
+  Acboth.$fShowAccumulateBoth @ [GHC.Types.Char]
+                              @ GHC.Types.Ordering
+                              $dShow
+                              $dShow1
+  = Main.$s$fShowAccumulateBoth
+"SPEC/Main $fShowAccumulateRight @ [Char] @ Ordering" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                                  [GHC.Types.Char]
+                                                                      $dShow1 :: GHC.Show.Show
+                                                                                   GHC.Types.Ordering
+  Accum.$fShowAccumulateRight @ [GHC.Types.Char]
+                              @ GHC.Types.Ordering
+                              $dShow
+                              $dShow1
+  = Main.$s$fShowAccumulateRight
 "SPEC/Main $fShowFirst' @ [Char]" [ALWAYS] forall $dShow :: GHC.Show.Show
                                                               [GHC.Types.Char]
   FirstMappend.$fShowFirst' @ [GHC.Types.Char] $dShow
@@ -718,17 +849,17 @@ e3bd864fe81295cabb6b36ca45539f6f
                               $dShow
                               $dShow1
   = Main.$s$fShowValidation
-"SPEC/Main monoidLeftIdentity @ (First' String)" [ALWAYS] forall $dEq :: GHC.Classes.Eq
-                                                                           (FirstMappend.First'
-                                                                              GHC.Base.String)
-                                                                 $dMonoid :: GHC.Base.Monoid
-                                                                               (FirstMappend.First'
-                                                                                  GHC.Base.String)
-  FirstMappend.monoidLeftIdentity @ (FirstMappend.First'
-                                       GHC.Base.String)
-                                  $dEq
-                                  $dMonoid
-  = Main.$smonoidLeftIdentity
+"SPEC/Main monoidRightIdentity @ (First' String)" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                                            (FirstMappend.First'
+                                                                               GHC.Base.String)
+                                                                  $dMonoid :: GHC.Base.Monoid
+                                                                                (FirstMappend.First'
+                                                                                   GHC.Base.String)
+  FirstMappend.monoidRightIdentity @ (FirstMappend.First'
+                                        GHC.Base.String)
+                                   $dEq
+                                   $dMonoid
+  = Main.$smonoidRightIdentity
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

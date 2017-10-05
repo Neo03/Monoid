@@ -28,6 +28,8 @@ library
                     ,  Combine
                     ,  Comp
                     ,  Validation
+                    ,  Accum
+                    ,  Acboth 
   build-depends:       base >= 4.7 && < 5
                     ,  QuickCheck
                     ,  semigroups

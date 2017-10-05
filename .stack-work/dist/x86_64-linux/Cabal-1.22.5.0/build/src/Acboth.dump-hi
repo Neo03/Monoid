@@ -1,0 +1,961 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-05 09:53:48.131362 UTC
+
+interface Monoi_36px53ZPhG84BimjxB5yeC:Acboth 7103
+  interface hash: 57f54e3d71e896aeae413cdbd5e56e70
+  ABI hash: 56baf5fba1104db8e42a414a3a5c9e0a
+  export-list hash: 495cc09ed90cefc5a32ee4fba6589ab5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Acboth.semigroupAcbothAssoc
+  Acboth.AcbothAssoc
+  Acboth.AccumulateBoth{Acboth.AccumulateBoth}
+  Acboth.Validation{Acboth.Failure Acboth.Success}
+module dependencies:
+package dependencies: QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      array-0.5.1.1@array_GYDb2ArsFSSIHqSGBYOjLV base-4.8.2.0*
+                      binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ
+                      bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS
+                      containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe
+                      deepseq-1.4.2.0@deeps_5CvZ3NruJCLG6fI7ct2neg
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW
+                      random-1.1@rando_ErsaxGdx2qN9xGxJzmzYmh
+                      semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp*
+                      tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM template-haskell-2.10.0.0
+                      text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9
+                      tf-random-0.5@tfran_0KoOJ8vyUWi63yKroqCxAy
+                      time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV
+                      transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ
+                      unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ:Data.Binary.Generic
+         bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS:Data.ByteString.Builder
+         hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU:Data.Hashable.Generic
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Show
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Format.Parse
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntMap.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntSet.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Map.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Sequence
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW:Control.Monad.Primitive
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.List.NonEmpty
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup
+                         tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Arbitrary 8fd714c1aa0b696271aa178223178a73
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Gen 32cc76b256b1f90127c4900263769201
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup ab01b5704defdf2bfd4bd9d2261dc02e
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fArbitraryAccumulateBoth ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Acboth.AccumulateBoth a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                      $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b.
+                  @ (Acboth.AccumulateBoth a b)
+                  (Acboth.$fArbitraryAccumulateBoth_$carbitrary
+                     @ a
+                     @ b
+                     $dArbitrary
+                     $dArbitrary1)
+                  (Acboth.$fArbitraryAccumulateBoth_$cshrink
+                     @ a
+                     @ b
+                     $dArbitrary
+                     $dArbitrary1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fArbitraryAccumulateBoth1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> Acboth.AccumulateBoth a b
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   eta :: Test.QuickCheck.Random.QCGen
+                   eta1 :: GHC.Types.Int ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case eta
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } } }
+                 } in
+                 (Test.QuickCheck.Gen.elements
+                    @ (Acboth.AccumulateBoth a b)
+                    (GHC.Types.:
+                       @ (Acboth.AccumulateBoth a b)
+                       (Acboth.Success
+                          @ a
+                          @ b
+                          ((Test.QuickCheck.Arbitrary.arbitrary @ a $dArbitrary)
+                             `cast`
+                           (Test.QuickCheck.Gen.NTCo:Gen[0] <a>_R)
+                             (case ds1 of wild { (,) r1 r2 -> r1 })
+                             eta1))
+                         `cast`
+                       (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N)
+                       (GHC.Types.:
+                          @ (Acboth.AccumulateBoth a b)
+                          (Acboth.Failure
+                             @ a
+                             @ b
+                             ((Test.QuickCheck.Arbitrary.arbitrary @ b $dArbitrary1)
+                                `cast`
+                              (Test.QuickCheck.Gen.NTCo:Gen[0] <b>_R)
+                                (case ds2 of wild { (,) r1 r2 -> r1 })
+                                eta1))
+                            `cast`
+                          (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N)
+                          (GHC.Types.[] @ (Acboth.AccumulateBoth a b)))))
+                   `cast`
+                 (Test.QuickCheck.Gen.NTCo:Gen[0] <Acboth.AccumulateBoth a b>_R)
+                   (case ds2 of wild { (,) r1 r2 -> r2 })
+                   eta1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fArbitraryAccumulateBoth_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Gen.Gen (Acboth.AccumulateBoth a b)
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Acboth.$fArbitraryAccumulateBoth1
+                  `cast`
+                (forall a b.
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                               <Acboth.AccumulateBoth a b>_R)) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fArbitraryAccumulateBoth_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Acboth.AccumulateBoth a b -> [Acboth.AccumulateBoth a b]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   @ b
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   ds1 :: Acboth.AccumulateBoth a b ->
+                 GHC.Types.[] @ (Acboth.AccumulateBoth a b)) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fEqAccumulateBoth ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    GHC.Classes.Eq (Acboth.AccumulateBoth a b)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dEq :: GHC.Classes.Eq a
+                      $dEq1 :: GHC.Classes.Eq b.
+                  @ (Acboth.AccumulateBoth a b)
+                  (Acboth.$fEqAccumulateBoth_$c== @ a @ b $dEq $dEq1)
+                  (Acboth.$fEqAccumulateBoth_$c/= @ a @ b $dEq $dEq1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fEqAccumulateBoth_$c/= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Acboth.AccumulateBoth a b
+    -> Acboth.AccumulateBoth a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Acboth.$fEqAccumulateBoth_$c/=1
+                  `cast`
+                (forall a b.
+                 <GHC.Classes.Eq a>_R
+                 ->_R <GHC.Classes.Eq b>_R
+                 ->_R Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N
+                 ->_R Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N
+                 ->_R <GHC.Types.Bool>_R) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fEqAccumulateBoth_$c/=1 ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Acboth.Validation a b -> Acboth.Validation a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dEq :: GHC.Classes.Eq a
+                   $dEq1 :: GHC.Classes.Eq b
+                   a1 :: Acboth.Validation a b
+                   b1 :: Acboth.Validation a b ->
+                 case a1 of wild {
+                   Acboth.Success a2
+                   -> case b1 of wild1 {
+                        Acboth.Success b2
+                        -> case GHC.Classes.== @ a $dEq a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Acboth.Failure ipv -> GHC.Types.True }
+                   Acboth.Failure a2
+                   -> case b1 of wild1 {
+                        Acboth.Success ipv -> GHC.Types.True
+                        Acboth.Failure b2
+                        -> case GHC.Classes.== @ b $dEq1 a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fEqAccumulateBoth_$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Acboth.AccumulateBoth a b
+    -> Acboth.AccumulateBoth a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Acboth.$fEqAccumulateBoth_$c==1
+                  `cast`
+                (forall a b.
+                 <GHC.Classes.Eq a>_R
+                 ->_R <GHC.Classes.Eq b>_R
+                 ->_R Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N
+                 ->_R Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N
+                 ->_R <GHC.Types.Bool>_R) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fEqAccumulateBoth_$c==1 ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Acboth.Validation a b -> Acboth.Validation a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dEq :: GHC.Classes.Eq a
+                   $dEq1 :: GHC.Classes.Eq b
+                   ds :: Acboth.Validation a b
+                   ds1 :: Acboth.Validation a b ->
+                 case ds of wild {
+                   Acboth.Success a1
+                   -> case ds1 of wild1 {
+                        Acboth.Success b1 -> GHC.Classes.== @ a $dEq a1 b1
+                        Acboth.Failure ipv -> GHC.Types.False }
+                   Acboth.Failure a1
+                   -> case ds1 of wild1 {
+                        Acboth.Success ipv -> GHC.Types.False
+                        Acboth.Failure b1 -> GHC.Classes.== @ b $dEq1 a1 b1 } }) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fEqValidation ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    GHC.Classes.Eq (Acboth.Validation a b)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dEq :: GHC.Classes.Eq a
+                      $dEq1 :: GHC.Classes.Eq b.
+                  @ (Acboth.Validation a b)
+                  (Acboth.$fEqAccumulateBoth_$c==1 @ a @ b $dEq $dEq1)
+                  (Acboth.$fEqAccumulateBoth_$c/=1 @ a @ b $dEq $dEq1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fSemigroupAccumulateBoth ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Data.Semigroup.Semigroup (Acboth.AccumulateBoth a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dSemigroup :: Data.Semigroup.Semigroup a
+                      $dSemigroup1 :: Data.Semigroup.Semigroup b.
+                  @ (Acboth.AccumulateBoth a b)
+                  (Acboth.$fSemigroupAccumulateBoth_$c<>
+                     @ a
+                     @ b
+                     $dSemigroup
+                     $dSemigroup1)
+                  (Acboth.$fSemigroupAccumulateBoth_$csconcat
+                     @ a
+                     @ b
+                     $dSemigroup
+                     $dSemigroup1)
+                  (Acboth.$fSemigroupAccumulateBoth_$cstimes
+                     @ a
+                     @ b
+                     $dSemigroup
+                     $dSemigroup1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fSemigroupAccumulateBoth_$c<> ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Acboth.AccumulateBoth a b
+    -> Acboth.AccumulateBoth a b -> Acboth.AccumulateBoth a b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   $dSemigroup1 :: Data.Semigroup.Semigroup b
+                   ds :: Acboth.AccumulateBoth a b
+                   ds1 :: Acboth.AccumulateBoth a b ->
+                 case ds
+                        `cast`
+                      (Acboth.NTCo:AccumulateBoth[0] <a>_N <b>_N) of wild {
+                   Acboth.Success a1
+                   -> case ds1
+                             `cast`
+                           (Acboth.NTCo:AccumulateBoth[0] <a>_N <b>_N) of wild1 {
+                        Acboth.Success b1
+                        -> (Acboth.Success
+                              @ a
+                              @ b
+                              (Data.Semigroup.<> @ a $dSemigroup a1 b1))
+                             `cast`
+                           (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N)
+                        Acboth.Failure ipv
+                        -> (Acboth.Failure @ a @ b ipv)
+                             `cast`
+                           (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N) }
+                   Acboth.Failure a1
+                   -> case ds1
+                             `cast`
+                           (Acboth.NTCo:AccumulateBoth[0] <a>_N <b>_N) of wild1 {
+                        Acboth.Success ipv
+                        -> (Acboth.Failure @ a @ b a1)
+                             `cast`
+                           (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N)
+                        Acboth.Failure b1
+                        -> (Acboth.Failure
+                              @ a
+                              @ b
+                              (Data.Semigroup.<> @ b $dSemigroup1 a1 b1))
+                             `cast`
+                           (Sym (Acboth.NTCo:AccumulateBoth[0]) <a>_N <b>_N) } }) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fSemigroupAccumulateBoth_$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Data.List.NonEmpty.NonEmpty (Acboth.AccumulateBoth a b)
+    -> Acboth.AccumulateBoth a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(SS),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.Semigroup.Semigroup b
+                   w2 :: Data.List.NonEmpty.NonEmpty (Acboth.AccumulateBoth a b) ->
+                 case w2 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 Acboth.$w$csconcat @ a @ b w w1 ww1 ww2 }) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fSemigroupAccumulateBoth_$cstimes ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    forall b1.
+    GHC.Real.Integral b1 =>
+    b1 -> Acboth.AccumulateBoth a b -> Acboth.AccumulateBoth a b
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ a
+                   @ b
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   $dSemigroup1 :: Data.Semigroup.Semigroup b
+                   @ b1
+                   $dIntegral :: GHC.Real.Integral b1
+                   eta :: b1
+                   eta1 :: Acboth.AccumulateBoth a b ->
+                 let {
+                   $dReal :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                 } in
+                 case GHC.Classes.<=
+                        @ b1
+                        (GHC.Real.$p2Real @ b1 $dReal)
+                        eta
+                        (GHC.Num.fromInteger
+                           @ b1
+                           (GHC.Real.$p1Real @ b1 $dReal)
+                           __integer 0) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $dReal1 :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        $dEnum :: GHC.Enum.Enum b1 = GHC.Real.$p2Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        a31 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal1
+                      } in
+                      let {
+                        $dEq :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a31
+                      } in
+                      let {
+                        $dNum :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal1
+                      } in
+                      letrec {
+                        f :: Acboth.AccumulateBoth a b -> b1 -> Acboth.AccumulateBoth a b
+                          {- Arity: 2 -}
+                        = \ x :: Acboth.AccumulateBoth a b y :: b1 ->
+                          case GHC.Real.even @ b1 $dIntegral y of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ b1
+                                      $dEq
+                                      y
+                                      (GHC.Num.fromInteger @ b1 $dNum __integer 1) of wild2 {
+                                 GHC.Types.False
+                                 -> let {
+                                      $dReal2 :: GHC.Real.Real b1
+                                      = GHC.Real.$p1Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      $dEnum1 :: GHC.Enum.Enum b1
+                                      = GHC.Real.$p2Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      a32 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal2
+                                    } in
+                                    let {
+                                      $dEq1 :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a32
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal2
+                                    } in
+                                    letrec {
+                                      g :: Acboth.AccumulateBoth a b
+                                           -> b1
+                                           -> Acboth.AccumulateBoth a b
+                                           -> Acboth.AccumulateBoth a b
+                                        {- Arity: 3 -}
+                                      = \ x1 :: Acboth.AccumulateBoth a b
+                                          y1 :: b1
+                                          z :: Acboth.AccumulateBoth a b ->
+                                        case GHC.Real.even @ b1 $dIntegral y1 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Classes.==
+                                                    @ b1
+                                                    $dEq1
+                                                    y1
+                                                    (GHC.Num.fromInteger
+                                                       @ b1
+                                                       $dNum1
+                                                       __integer 1) of wild4 {
+                                               GHC.Types.False
+                                               -> g (Acboth.$fSemigroupAccumulateBoth_$c<>
+                                                       @ a
+                                                       @ b
+                                                       $dSemigroup
+                                                       $dSemigroup1
+                                                       x1
+                                                       x1)
+                                                    (GHC.Real.quot
+                                                       @ b1
+                                                       $dIntegral
+                                                       (GHC.Enum.pred @ b1 $dEnum1 y1)
+                                                       (GHC.Num.fromInteger
+                                                          @ b1
+                                                          $dNum1
+                                                          __integer 2))
+                                                    (Acboth.$fSemigroupAccumulateBoth_$c<>
+                                                       @ a
+                                                       @ b
+                                                       $dSemigroup
+                                                       $dSemigroup1
+                                                       x1
+                                                       z)
+                                               GHC.Types.True
+                                               -> Acboth.$fSemigroupAccumulateBoth_$c<>
+                                                    @ a
+                                                    @ b
+                                                    $dSemigroup
+                                                    $dSemigroup1
+                                                    x1
+                                                    z }
+                                          GHC.Types.True
+                                          -> g (Acboth.$fSemigroupAccumulateBoth_$c<>
+                                                  @ a
+                                                  @ b
+                                                  $dSemigroup
+                                                  $dSemigroup1
+                                                  x1
+                                                  x1)
+                                               (GHC.Real.quot
+                                                  @ b1
+                                                  $dIntegral
+                                                  y1
+                                                  (GHC.Num.fromInteger @ b1 $dNum1 __integer 2))
+                                               z }
+                                    } in
+                                    g (Acboth.$fSemigroupAccumulateBoth_$c<>
+                                         @ a
+                                         @ b
+                                         $dSemigroup
+                                         $dSemigroup1
+                                         x
+                                         x)
+                                      (GHC.Real.quot
+                                         @ b1
+                                         $dIntegral
+                                         (GHC.Enum.pred @ b1 $dEnum y)
+                                         (GHC.Num.fromInteger @ b1 $dNum __integer 2))
+                                      x
+                                 GHC.Types.True -> x }
+                            GHC.Types.True
+                            -> f (Acboth.$fSemigroupAccumulateBoth_$c<>
+                                    @ a
+                                    @ b
+                                    $dSemigroup
+                                    $dSemigroup1
+                                    x
+                                    x)
+                                 (GHC.Real.quot
+                                    @ b1
+                                    $dIntegral
+                                    y
+                                    (GHC.Num.fromInteger @ b1 $dNum __integer 2)) }
+                      } in
+                      f eta1 eta
+                   GHC.Types.True
+                   -> GHC.Err.error
+                        @ (Acboth.AccumulateBoth a b)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b2 ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b2
+                              "stimes: positive multiplier expected"#)) }) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fShowAccumulateBoth ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Show.Show (Acboth.AccumulateBoth a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dShow :: GHC.Show.Show a
+                      $dShow1 :: GHC.Show.Show b.
+                  @ (Acboth.AccumulateBoth a b)
+                  (Acboth.$fShowAccumulateBoth_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Acboth.$fShowAccumulateBoth_$cshow @ a @ b $dShow $dShow1)
+                  (Acboth.$fShowAccumulateBoth_$cshowList @ a @ b $dShow $dShow1) -}
+26c095a95e48c6c1967d539642b0f3f4
+  $fShowAccumulateBoth1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+453979269de11eb2e03df11a847a0f8e
+  $fShowAccumulateBoth2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AccumulateBoth "#) -}
+c7a396363d277150941a8ce86688e9de
+  $fShowAccumulateBoth3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Failure "#) -}
+9e5298db452803171c3d03c530556382
+  $fShowAccumulateBoth4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Success "#) -}
+877858ab0a05d8adb3f5019afee5450e
+  $fShowAccumulateBoth5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+301894c7546f1bd8177c056278e84663
+  $fShowAccumulateBoth6 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows8
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fShowAccumulateBoth_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Acboth.AccumulateBoth a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   x :: Acboth.AccumulateBoth a b ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   Acboth.$fShowAccumulateBoth2
+                   (case x `cast`
+                         (Acboth.NTCo:AccumulateBoth[0] <a>_N <b>_N) of wild {
+                      Acboth.Success b1
+                      -> GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows9
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Acboth.$fShowAccumulateBoth4
+                              (GHC.Show.showsPrec
+                                 @ a
+                                 $dShow
+                                 Acboth.$fShowAccumulateBoth5
+                                 b1
+                                 Acboth.$fShowAccumulateBoth6))
+                      Acboth.Failure b1
+                      -> GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows9
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Acboth.$fShowAccumulateBoth3
+                              (GHC.Show.showsPrec
+                                 @ b
+                                 $dShow1
+                                 Acboth.$fShowAccumulateBoth5
+                                 b1
+                                 Acboth.$fShowAccumulateBoth6)) })) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fShowAccumulateBoth_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Acboth.AccumulateBoth a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   eta :: [Acboth.AccumulateBoth a b]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Acboth.AccumulateBoth a b)
+                   (Acboth.$fShowAccumulateBoth_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Acboth.$fShowAccumulateBoth1)
+                   eta
+                   eta1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $fShowAccumulateBoth_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Acboth.AccumulateBoth a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Types.Int
+                   w3 :: Acboth.AccumulateBoth a b ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Acboth.$w$cshowsPrec @ a @ b w w1 ww1 w3 }) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fShowValidation ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Show.Show (Acboth.Validation a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dShow :: GHC.Show.Show a
+                      $dShow1 :: GHC.Show.Show b.
+                  @ (Acboth.Validation a b)
+                  (Acboth.$fShowValidation_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Acboth.$fShowValidation_$cshow @ a @ b $dShow $dShow1)
+                  (Acboth.$fShowValidation_$cshowList @ a @ b $dShow $dShow1) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fShowValidation_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Acboth.Validation a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   x :: Acboth.Validation a b ->
+                 case x of wild {
+                   Acboth.Success b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Acboth.$fShowAccumulateBoth4
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow
+                           Acboth.$fShowAccumulateBoth5
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Acboth.Failure b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Acboth.$fShowAccumulateBoth3
+                        (GHC.Show.showsPrec
+                           @ b
+                           $dShow1
+                           Acboth.$fShowAccumulateBoth5
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fShowValidation_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Acboth.Validation a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   eta :: [Acboth.Validation a b]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Acboth.Validation a b)
+                   (Acboth.$fShowValidation_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Acboth.$fShowAccumulateBoth1)
+                   eta
+                   eta1) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $fShowValidation_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Acboth.Validation a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Types.Int
+                   w3 :: Acboth.Validation a b ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Acboth.$w$cshowsPrec1 @ a @ b w w1 ww1 w3 }) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $w$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Acboth.AccumulateBoth a b
+    -> [Acboth.AccumulateBoth a b] -> Acboth.AccumulateBoth a b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.Semigroup.Semigroup b
+                   ww :: Acboth.AccumulateBoth a b
+                   ww1 :: [Acboth.AccumulateBoth a b] ->
+                 letrec {
+                   go :: Acboth.AccumulateBoth a b
+                         -> [Acboth.AccumulateBoth a b] -> Acboth.AccumulateBoth a b
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ b1 :: Acboth.AccumulateBoth a b
+                       ds1 :: [Acboth.AccumulateBoth a b] ->
+                     case ds1 of wild1 {
+                       [] -> b1
+                       : c cs
+                       -> Acboth.$fSemigroupAccumulateBoth_$c<>
+                            @ a
+                            @ b
+                            w
+                            w1
+                            b1
+                            (go c cs) }
+                 } in
+                 go ww ww1) -}
+dfb3aaffcb1d10501355ef2bf63c3b04
+  $w$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int# -> Acboth.AccumulateBoth a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   ww :: GHC.Prim.Int#
+                   w2 :: Acboth.AccumulateBoth a b ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = Acboth.$w$cshowsPrec1
+                       @ a
+                       @ b
+                       w
+                       w1
+                       11
+                       w2 `cast` (Acboth.NTCo:AccumulateBoth[0] <a>_N <b>_N)
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Base.++ @ GHC.Types.Char Acboth.$fShowAccumulateBoth2 (g x)
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Acboth.$fShowAccumulateBoth2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }) -}
+9e9d8dac4322dbbe7155b81d9e25569b
+  $w$cshowsPrec1 ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int# -> Acboth.Validation a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   ww :: GHC.Prim.Int#
+                   w2 :: Acboth.Validation a b ->
+                 case w2 of wild {
+                   Acboth.Success b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w Acboth.$fShowAccumulateBoth5 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Acboth.$fShowAccumulateBoth4 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Acboth.$fShowAccumulateBoth4
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }
+                   Acboth.Failure b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ b w1 Acboth.$fShowAccumulateBoth5 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Acboth.$fShowAccumulateBoth3 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Acboth.$fShowAccumulateBoth3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) } }) -}
+39383aee0c726e3eefdc1fc29a20371b
+  type AcbothAssoc =
+    Acboth.AccumulateBoth GHC.Base.String GHC.Types.Ordering
+    -> Acboth.AccumulateBoth GHC.Base.String GHC.Types.Ordering
+    -> Acboth.AccumulateBoth GHC.Base.String GHC.Types.Ordering
+    -> GHC.Types.Bool
+dfb3aaffcb1d10501355ef2bf63c3b04
+  newtype AccumulateBoth a b = AccumulateBoth (Acboth.Validation a b)
+    Promotable
+9e9d8dac4322dbbe7155b81d9e25569b
+  data Validation a b = Success a | Failure b
+    Promotable
+d5b4eff1cb87b69111b79359008e5623
+  semigroupAcbothAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   $dEq :: GHC.Classes.Eq m
+                   $dSemigroup :: Data.Semigroup.Semigroup m
+                   a :: m
+                   b :: m
+                   c :: m ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))) -}
+instance Test.QuickCheck.Arbitrary.Arbitrary [Acboth.AccumulateBoth]
+  = Acboth.$fArbitraryAccumulateBoth
+instance GHC.Classes.Eq [Acboth.AccumulateBoth]
+  = Acboth.$fEqAccumulateBoth
+instance GHC.Classes.Eq [Acboth.Validation] = Acboth.$fEqValidation
+instance Data.Semigroup.Semigroup [Acboth.AccumulateBoth]
+  = Acboth.$fSemigroupAccumulateBoth
+instance GHC.Show.Show [Acboth.AccumulateBoth]
+  = Acboth.$fShowAccumulateBoth
+instance GHC.Show.Show [Acboth.Validation]
+  = Acboth.$fShowValidation
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
