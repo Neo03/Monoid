@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-03 09:40:32.136268 UTC
+2017-10-05 07:59:25.721522 UTC
 
 interface main@main:Main 7103
-  interface hash: 0b7f212a9b8dea3250f7e6786bbfc2e7
-  ABI hash: 9886ddd4cc941b6bc761c31792b8aadc
-  export-list hash: 21bf7a9cfda0a74a7cfc815a512e05df
-  orphan hash: 19d63cec24f6f1ab9c888243817947a4
+  interface hash: 8bce43bb0943160687a7afafe22baab8
+  ABI hash: 524a38e735bbc99f60078a042a5737ea
+  export-list hash: 347aebe6c8a0740d45f4759b5981e585
+  orphan hash: 25761e06798e6c2ad5f6b0f8ea080d3c
   flag hash: 8a641cc7424fb0224cd12f7ad18774db
   sig of: Nothing
   used TH splices: False
@@ -76,6 +76,7 @@ import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Or 589e1e067697a2f4b7e11
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Three 0378094b4d7c04aa94ec6c2fc1fbc518
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Trivial d45d6d29180e80f6e784747132be2d8c
 import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Two 3a57d6061c82d5811d35a13606d2a5aa
+import  -/  Monoid-0.1.0.0@Monoi_36px53ZPhG84BimjxB5yeC:Validation 09b4f56834b8eb53b7971e104e987236
 import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
 import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Test 2c4f23d680e8d74cae4b2b1a82364b0f
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
@@ -180,6 +181,16 @@ a3c335a781b6d9abf4a460d5ebfc9c24
      Unfolding: InlineRule (1, True, True)
                 (\ ds1 :: Two.Two [GHC.Types.Char] [GHC.Types.Char] ->
                  GHC.Types.[] @ (Two.Two [GHC.Types.Char] [GHC.Types.Char])) -}
+87957254490dd30869433723a253b589
+  $s$fArbitraryValidation1 ::
+    Validation.Validation [GHC.Types.Char] GHC.Types.Ordering
+    -> [Validation.Validation [GHC.Types.Char] GHC.Types.Ordering]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds1 :: Validation.Validation
+                            [GHC.Types.Char] GHC.Types.Ordering ->
+                 GHC.Types.[]
+                   @ (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)) -}
 862e15ba1bb6ff41d4aad117d6812071
   $s$fEqFirst'1 :: GHC.Classes.Eq [GHC.Types.Char]
   {- Strictness: m,
@@ -497,8 +508,53 @@ f9ffd3b95e38498154fdcb14a48a92bd
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-82ed24c4a5d5922ac0f72c9c1a1b6d65
-  $smonoidRightIdentity ::
+31a957e281a27de1cd46948a48edee67
+  $s$fShowValidation ::
+    GHC.Show.Show
+      (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)
+                  (Validation.$fShowValidation_$cshowsPrec
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowFirst'2
+                     GHC.Show.$fShowOrdering)
+                  (Validation.$fShowValidation_$cshow
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Ordering
+                     Main.$s$fShowFirst'2
+                     GHC.Show.$fShowOrdering)
+                  Main.$s$fShowValidation1 -}
+44ac4582171a164b202dcd11bd03a96a
+  $s$fShowValidation1 ::
+    [Validation.Validation [GHC.Types.Char] GHC.Types.Ordering]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ eta :: [Validation.Validation
+                             [GHC.Types.Char] GHC.Types.Ordering]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Validation.Validation [GHC.Types.Char] GHC.Types.Ordering)
+                   Main.$s$fShowValidation2
+                   eta
+                   eta1) -}
+48aa5eab7655aca13a44b4a9b577dc0c
+  $s$fShowValidation2 ::
+    Validation.Validation [GHC.Types.Char] GHC.Types.Ordering
+    -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w3 :: Validation.Validation
+                           [GHC.Types.Char] GHC.Types.Ordering ->
+                 Validation.$w$cshowsPrec
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Ordering
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   GHC.Show.$fShowOrdering
+                   0
+                   w3) -}
+133b6ebebcb8d0bfe9b9cbb0d5481f2d
+  $smonoidLeftIdentity ::
     FirstMappend.First' GHC.Base.String -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -508,10 +564,10 @@ f9ffd3b95e38498154fdcb14a48a92bd
                    Main.$s$fEqFirst'1
                    (FirstMappend.$fMonoidFirst'_$cmappend
                       @ [GHC.Types.Char]
+                      m1
                       (FirstMappend.Nada @ [GHC.Types.Char])
                         `cast`
-                      (Sym (FirstMappend.NTCo:First'[0]) <[GHC.Types.Char]>_N)
-                      m1)
+                      (Sym (FirstMappend.NTCo:First'[0]) <[GHC.Types.Char]>_N))
                    m1) -}
 ee6590a2ab0ffaa5074d93f2d3fc4c03
   main :: GHC.Types.IO ()
@@ -653,17 +709,26 @@ e3bd864fe81295cabb6b36ca45539f6f
                        $dShow
                        $dShow1
   = Main.$s$fShowTwo_$s$fShowTwo_$cshow
-"SPEC/Main monoidRightIdentity @ (First' String)" [ALWAYS] forall $dEq :: GHC.Classes.Eq
-                                                                            (FirstMappend.First'
-                                                                               GHC.Base.String)
-                                                                  $dMonoid :: GHC.Base.Monoid
-                                                                                (FirstMappend.First'
-                                                                                   GHC.Base.String)
-  FirstMappend.monoidRightIdentity @ (FirstMappend.First'
-                                        GHC.Base.String)
-                                   $dEq
-                                   $dMonoid
-  = Main.$smonoidRightIdentity
+"SPEC/Main $fShowValidation @ [Char] @ Ordering" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                             [GHC.Types.Char]
+                                                                 $dShow1 :: GHC.Show.Show
+                                                                              GHC.Types.Ordering
+  Validation.$fShowValidation @ [GHC.Types.Char]
+                              @ GHC.Types.Ordering
+                              $dShow
+                              $dShow1
+  = Main.$s$fShowValidation
+"SPEC/Main monoidLeftIdentity @ (First' String)" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                                           (FirstMappend.First'
+                                                                              GHC.Base.String)
+                                                                 $dMonoid :: GHC.Base.Monoid
+                                                                               (FirstMappend.First'
+                                                                                  GHC.Base.String)
+  FirstMappend.monoidLeftIdentity @ (FirstMappend.First'
+                                       GHC.Base.String)
+                                  $dEq
+                                  $dMonoid
+  = Main.$smonoidLeftIdentity
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

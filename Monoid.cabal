@@ -27,6 +27,7 @@ library
                     ,  Or
                     ,  Combine
                     ,  Comp
+                    ,  Validation
   build-depends:       base >= 4.7 && < 5
                     ,  QuickCheck
                     ,  semigroups

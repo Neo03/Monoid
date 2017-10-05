@@ -1,0 +1,718 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-05 07:59:12.154006 UTC
+
+interface Monoi_36px53ZPhG84BimjxB5yeC:Validation 7103
+  interface hash: 9da98b13a0ca75eb9452b15ed47aa642
+  ABI hash: 09b4f56834b8eb53b7971e104e987236
+  export-list hash: 8d114e75537004adf7d9573a64555bcf
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Validation.semigroupValidAssoc
+  Validation.Validation{Validation.Failure Validation.Success}
+  Validation.ValidationAssoc
+module dependencies:
+package dependencies: QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      array-0.5.1.1@array_GYDb2ArsFSSIHqSGBYOjLV base-4.8.2.0*
+                      binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ
+                      bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS
+                      containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe
+                      deepseq-1.4.2.0@deeps_5CvZ3NruJCLG6fI7ct2neg
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW
+                      random-1.1@rando_ErsaxGdx2qN9xGxJzmzYmh
+                      semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp*
+                      tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM template-haskell-2.10.0.0
+                      text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9
+                      tf-random-0.5@tfran_0KoOJ8vyUWi63yKroqCxAy
+                      time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV
+                      transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ
+                      unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.8.3.0@binar_HgfnugDrjlN23m2aiAUfJZ:Data.Binary.Generic
+         bytestring-0.10.8.1@bytes_3TyVKV2NA2yDNWNtA3XuhS:Data.ByteString.Builder
+         hashable-1.2.6.1@hasha_EEi7m9vZzBxBk2VLNi3oLU:Data.Hashable.Generic
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Show
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.Format.Parse
+         time-1.6.0.1@time_8x65OU2SQ5BFIOPjfj6jKV:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@trans_0oxumI52RQNEUg5dM0tOmZ:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntMap.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.IntSet.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Map.Base
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Sequence
+                         containers-0.5.7.1@conta_1Ytulk3jFnTKjdQHzgjLXe:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primi_3TuOs80vGzIBbdFePa9jNW:Control.Monad.Primitive
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.List.NonEmpty
+                         semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup
+                         tagged-0.8.5@tagge_HDgkupRsqP51Dl3VYHbacM:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text
+                         text-1.2.2.2@text_4hRuWAoCJN19z5QMMbAWP9:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unord_IzUTur3c2ed8LmekpyssGD:Data.HashSet
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck 418c727fda07763ee8c9886421683eb3
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Arbitrary 8fd714c1aa0b696271aa178223178a73
+import  -/  QuickCheck-2.9.2@Quick_5IymKNgsgA72GSlwuxKpKQ:Test.QuickCheck.Gen 32cc76b256b1f90127c4900263769201
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  semigroups-0.18.3@semig_4E1BA0zXONICIrUp4bqWLp:Data.Semigroup ab01b5704defdf2bfd4bd9d2261dc02e
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fArbitraryValidation ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Validation.Validation a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                      $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b.
+                  @ (Validation.Validation a b)
+                  (Validation.$fArbitraryValidation_$carbitrary
+                     @ a
+                     @ b
+                     $dArbitrary
+                     $dArbitrary1)
+                  (Validation.$fArbitraryValidation_$cshrink
+                     @ a
+                     @ b
+                     $dArbitrary
+                     $dArbitrary1) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fArbitraryValidation1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> Validation.Validation a b
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   eta :: Test.QuickCheck.Random.QCGen
+                   eta1 :: GHC.Types.Int ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case eta
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))) } } }
+                 } in
+                 (Test.QuickCheck.Gen.elements
+                    @ (Validation.Validation a b)
+                    (GHC.Types.:
+                       @ (Validation.Validation a b)
+                       (Validation.Failure
+                          @ a
+                          @ b
+                          ((Test.QuickCheck.Arbitrary.arbitrary @ a $dArbitrary)
+                             `cast`
+                           (Test.QuickCheck.Gen.NTCo:Gen[0] <a>_R)
+                             (case ds1 of wild { (,) r1 r2 -> r1 })
+                             eta1))
+                       (GHC.Types.:
+                          @ (Validation.Validation a b)
+                          (Validation.Success
+                             @ a
+                             @ b
+                             ((Test.QuickCheck.Arbitrary.arbitrary @ b $dArbitrary1)
+                                `cast`
+                              (Test.QuickCheck.Gen.NTCo:Gen[0] <b>_R)
+                                (case ds2 of wild { (,) r1 r2 -> r1 })
+                                eta1))
+                          (GHC.Types.[] @ (Validation.Validation a b)))))
+                   `cast`
+                 (Test.QuickCheck.Gen.NTCo:Gen[0] <Validation.Validation a b>_R)
+                   (case ds2 of wild { (,) r1 r2 -> r2 })
+                   eta1) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fArbitraryValidation_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Gen.Gen (Validation.Validation a b)
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Validation.$fArbitraryValidation1
+                  `cast`
+                (forall a b.
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                               <Validation.Validation a b>_R)) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fArbitraryValidation_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Validation.Validation a b -> [Validation.Validation a b]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   @ b
+                   $dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a
+                   $dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b
+                   ds1 :: Validation.Validation a b ->
+                 GHC.Types.[] @ (Validation.Validation a b)) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fEqValidation ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    GHC.Classes.Eq (Validation.Validation a b)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dEq :: GHC.Classes.Eq a
+                      $dEq1 :: GHC.Classes.Eq b.
+                  @ (Validation.Validation a b)
+                  (Validation.$fEqValidation_$c== @ a @ b $dEq $dEq1)
+                  (Validation.$fEqValidation_$c/= @ a @ b $dEq $dEq1) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fEqValidation_$c/= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Validation.Validation a b
+    -> Validation.Validation a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dEq :: GHC.Classes.Eq a
+                   $dEq1 :: GHC.Classes.Eq b
+                   a1 :: Validation.Validation a b
+                   b1 :: Validation.Validation a b ->
+                 case a1 of wild {
+                   Validation.Failure a2
+                   -> case b1 of wild1 {
+                        Validation.Failure b2
+                        -> case GHC.Classes.== @ a $dEq a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Validation.Success ipv -> GHC.Types.True }
+                   Validation.Success a2
+                   -> case b1 of wild1 {
+                        Validation.Failure ipv -> GHC.Types.True
+                        Validation.Success b2
+                        -> case GHC.Classes.== @ b $dEq1 a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fEqValidation_$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Validation.Validation a b
+    -> Validation.Validation a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dEq :: GHC.Classes.Eq a
+                   $dEq1 :: GHC.Classes.Eq b
+                   ds :: Validation.Validation a b
+                   ds1 :: Validation.Validation a b ->
+                 case ds of wild {
+                   Validation.Failure a1
+                   -> case ds1 of wild1 {
+                        Validation.Failure b1 -> GHC.Classes.== @ a $dEq a1 b1
+                        Validation.Success ipv -> GHC.Types.False }
+                   Validation.Success a1
+                   -> case ds1 of wild1 {
+                        Validation.Failure ipv -> GHC.Types.False
+                        Validation.Success b1 -> GHC.Classes.== @ b $dEq1 a1 b1 } }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fSemigroupValidation ::
+    Data.Semigroup.Semigroup a =>
+    Data.Semigroup.Semigroup (Validation.Validation a b)
+  DFunId[0]
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a @ b $dSemigroup :: Data.Semigroup.Semigroup a.
+                  @ (Validation.Validation a b)
+                  (Validation.$fSemigroupValidation_$c<> @ a @ b $dSemigroup)
+                  (Validation.$fSemigroupValidation_$csconcat @ a @ b $dSemigroup)
+                  (Validation.$fSemigroupValidation_$cstimes @ a @ b $dSemigroup) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fSemigroupValidation_$c<> ::
+    Data.Semigroup.Semigroup a =>
+    Validation.Validation a b
+    -> Validation.Validation a b -> Validation.Validation a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   ds :: Validation.Validation a b
+                   ds1 :: Validation.Validation a b ->
+                 case ds of wild {
+                   Validation.Failure a1
+                   -> case ds1 of wild1 {
+                        Validation.Failure b1
+                        -> Validation.Failure
+                             @ a
+                             @ b
+                             (Data.Semigroup.<> @ a $dSemigroup a1 b1)
+                        Validation.Success ipv -> wild }
+                   Validation.Success ipv
+                   -> case ds1 of wild1 {
+                        Validation.Failure b1 -> wild1
+                        Validation.Success ipv1 -> wild } }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fSemigroupValidation_$csconcat ::
+    Data.Semigroup.Semigroup a =>
+    Data.List.NonEmpty.NonEmpty (Validation.Validation a b)
+    -> Validation.Validation a b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><S(SS),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   w :: Data.Semigroup.Semigroup a
+                   w1 :: Data.List.NonEmpty.NonEmpty (Validation.Validation a b) ->
+                 case w1 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 Validation.$w$csconcat @ a @ b w ww1 ww2 }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fSemigroupValidation_$cstimes ::
+    Data.Semigroup.Semigroup a =>
+    forall b1.
+    GHC.Real.Integral b1 =>
+    b1 -> Validation.Validation a b -> Validation.Validation a b
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ b
+                   $dSemigroup :: Data.Semigroup.Semigroup a
+                   @ b1
+                   $dIntegral :: GHC.Real.Integral b1
+                   eta :: b1
+                   eta1 :: Validation.Validation a b ->
+                 let {
+                   $dReal :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                 } in
+                 case GHC.Classes.<=
+                        @ b1
+                        (GHC.Real.$p2Real @ b1 $dReal)
+                        eta
+                        (GHC.Num.fromInteger
+                           @ b1
+                           (GHC.Real.$p1Real @ b1 $dReal)
+                           __integer 0) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $dReal1 :: GHC.Real.Real b1 = GHC.Real.$p1Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        $dEnum :: GHC.Enum.Enum b1 = GHC.Real.$p2Integral @ b1 $dIntegral
+                      } in
+                      let {
+                        a31 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal1
+                      } in
+                      let {
+                        $dEq :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a31
+                      } in
+                      let {
+                        $dNum :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal1
+                      } in
+                      letrec {
+                        f :: Validation.Validation a b -> b1 -> Validation.Validation a b
+                          {- Arity: 2 -}
+                        = \ x :: Validation.Validation a b y :: b1 ->
+                          case GHC.Real.even @ b1 $dIntegral y of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ b1
+                                      $dEq
+                                      y
+                                      (GHC.Num.fromInteger @ b1 $dNum __integer 1) of wild2 {
+                                 GHC.Types.False
+                                 -> let {
+                                      $dReal2 :: GHC.Real.Real b1
+                                      = GHC.Real.$p1Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      $dEnum1 :: GHC.Enum.Enum b1
+                                      = GHC.Real.$p2Integral @ b1 $dIntegral
+                                    } in
+                                    let {
+                                      a32 :: GHC.Classes.Ord b1 = GHC.Real.$p2Real @ b1 $dReal2
+                                    } in
+                                    let {
+                                      $dEq1 :: GHC.Classes.Eq b1 = GHC.Classes.$p1Ord @ b1 a32
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num b1 = GHC.Real.$p1Real @ b1 $dReal2
+                                    } in
+                                    letrec {
+                                      g :: Validation.Validation a b
+                                           -> b1
+                                           -> Validation.Validation a b
+                                           -> Validation.Validation a b
+                                        {- Arity: 3 -}
+                                      = \ x1 :: Validation.Validation a b
+                                          y1 :: b1
+                                          z :: Validation.Validation a b ->
+                                        case GHC.Real.even @ b1 $dIntegral y1 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Classes.==
+                                                    @ b1
+                                                    $dEq1
+                                                    y1
+                                                    (GHC.Num.fromInteger
+                                                       @ b1
+                                                       $dNum1
+                                                       __integer 1) of wild4 {
+                                               GHC.Types.False
+                                               -> g (Validation.$fSemigroupValidation_$c<>
+                                                       @ a
+                                                       @ b
+                                                       $dSemigroup
+                                                       x1
+                                                       x1)
+                                                    (GHC.Real.quot
+                                                       @ b1
+                                                       $dIntegral
+                                                       (GHC.Enum.pred @ b1 $dEnum1 y1)
+                                                       (GHC.Num.fromInteger
+                                                          @ b1
+                                                          $dNum1
+                                                          __integer 2))
+                                                    (Validation.$fSemigroupValidation_$c<>
+                                                       @ a
+                                                       @ b
+                                                       $dSemigroup
+                                                       x1
+                                                       z)
+                                               GHC.Types.True
+                                               -> Validation.$fSemigroupValidation_$c<>
+                                                    @ a
+                                                    @ b
+                                                    $dSemigroup
+                                                    x1
+                                                    z }
+                                          GHC.Types.True
+                                          -> g (Validation.$fSemigroupValidation_$c<>
+                                                  @ a
+                                                  @ b
+                                                  $dSemigroup
+                                                  x1
+                                                  x1)
+                                               (GHC.Real.quot
+                                                  @ b1
+                                                  $dIntegral
+                                                  y1
+                                                  (GHC.Num.fromInteger @ b1 $dNum1 __integer 2))
+                                               z }
+                                    } in
+                                    g (Validation.$fSemigroupValidation_$c<>
+                                         @ a
+                                         @ b
+                                         $dSemigroup
+                                         x
+                                         x)
+                                      (GHC.Real.quot
+                                         @ b1
+                                         $dIntegral
+                                         (GHC.Enum.pred @ b1 $dEnum y)
+                                         (GHC.Num.fromInteger @ b1 $dNum __integer 2))
+                                      x
+                                 GHC.Types.True -> x }
+                            GHC.Types.True
+                            -> f (Validation.$fSemigroupValidation_$c<>
+                                    @ a
+                                    @ b
+                                    $dSemigroup
+                                    x
+                                    x)
+                                 (GHC.Real.quot
+                                    @ b1
+                                    $dIntegral
+                                    y
+                                    (GHC.Num.fromInteger @ b1 $dNum __integer 2)) }
+                      } in
+                      f eta1 eta
+                   GHC.Types.True
+                   -> GHC.Err.error
+                        @ (Validation.Validation a b)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b2 ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b2
+                              "stimes: positive multiplier expected"#)) }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fShowValidation ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Show.Show (Validation.Validation a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dShow :: GHC.Show.Show a
+                      $dShow1 :: GHC.Show.Show b.
+                  @ (Validation.Validation a b)
+                  (Validation.$fShowValidation_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Validation.$fShowValidation_$cshow @ a @ b $dShow $dShow1)
+                  (Validation.$fShowValidation_$cshowList @ a @ b $dShow $dShow1) -}
+6f751b1f7d730fd07a5aaec5a6f005d7
+  $fShowValidation1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+3fa2f70f2871d64444a2ae32b64001a4
+  $fShowValidation2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Success "#) -}
+78be5f5d847a0448bf2cd496ab08d71c
+  $fShowValidation3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Failure "#) -}
+843664cdf277a233de95bc62cf8c1f2d
+  $fShowValidation4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fShowValidation_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Validation.Validation a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   x :: Validation.Validation a b ->
+                 case x of wild {
+                   Validation.Failure b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Validation.$fShowValidation3
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow
+                           Validation.$fShowValidation4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Validation.Success b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Validation.$fShowValidation2
+                        (GHC.Show.showsPrec
+                           @ b
+                           $dShow1
+                           Validation.$fShowValidation4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fShowValidation_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Validation.Validation a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   eta :: [Validation.Validation a b]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Validation.Validation a b)
+                   (Validation.$fShowValidation_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Validation.$fShowValidation1)
+                   eta
+                   eta1) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $fShowValidation_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Validation.Validation a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Types.Int
+                   w3 :: Validation.Validation a b ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Validation.$w$cshowsPrec @ a @ b w w1 ww1 w3 }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $w$csconcat ::
+    Data.Semigroup.Semigroup a =>
+    Validation.Validation a b
+    -> [Validation.Validation a b] -> Validation.Validation a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: Data.Semigroup.Semigroup a
+                   ww :: Validation.Validation a b
+                   ww1 :: [Validation.Validation a b] ->
+                 letrec {
+                   go :: Validation.Validation a b
+                         -> [Validation.Validation a b] -> Validation.Validation a b
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ b1 :: Validation.Validation a b
+                       ds1 :: [Validation.Validation a b] ->
+                     case ds1 of wild1 {
+                       [] -> b1
+                       : c cs
+                       -> case b1 of wild {
+                            Validation.Failure a1
+                            -> case go c cs of wild2 {
+                                 Validation.Failure b2
+                                 -> Validation.Failure @ a @ b (Data.Semigroup.<> @ a w a1 b2)
+                                 Validation.Success ipv -> wild }
+                            Validation.Success ipv
+                            -> case go c cs of wild2 {
+                                 Validation.Failure b2 -> wild2
+                                 Validation.Success ipv1 -> wild } } }
+                 } in
+                 go ww ww1) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  $w$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int# -> Validation.Validation a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   ww :: GHC.Prim.Int#
+                   w2 :: Validation.Validation a b ->
+                 case w2 of wild {
+                   Validation.Failure b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w Validation.$fShowValidation4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Validation.$fShowValidation3 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Validation.$fShowValidation3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }
+                   Validation.Success b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ b w1 Validation.$fShowValidation4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Validation.$fShowValidation2 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Validation.$fShowValidation2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) } }) -}
+8e9f852604be5f6bc1b5c31a52a889f3
+  data Validation a b = Failure a | Success b
+    Promotable
+f6be5f54651fa44899d5b276e7a045f4
+  type ValidationAssoc =
+    Validation.Validation GHC.Base.String GHC.Types.Ordering
+    -> Validation.Validation GHC.Base.String GHC.Types.Ordering
+    -> Validation.Validation GHC.Base.String GHC.Types.Ordering
+    -> GHC.Types.Bool
+c2a524c7f4d969e971b7da67468c12d0
+  semigroupValidAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   $dEq :: GHC.Classes.Eq m
+                   $dSemigroup :: Data.Semigroup.Semigroup m
+                   a :: m
+                   b :: m
+                   c :: m ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)) -}
+instance Test.QuickCheck.Arbitrary.Arbitrary [Validation.Validation]
+  = Validation.$fArbitraryValidation
+instance GHC.Classes.Eq [Validation.Validation]
+  = Validation.$fEqValidation
+instance Data.Semigroup.Semigroup [Validation.Validation]
+  = Validation.$fSemigroupValidation
+instance GHC.Show.Show [Validation.Validation]
+  = Validation.$fShowValidation
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

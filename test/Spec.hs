@@ -10,6 +10,7 @@ import BoolDisj
 import Or
 import Combine
 import Comp
+import Validation
 
 main :: IO ()
 main = do
@@ -26,3 +27,4 @@ main = do
   quickCheck (semigroupOrAssoc :: OrAssoc)
   quickCheck combineAssoc
   quickCheck compAssoc
+  quickCheck (semigroupValidAssoc :: ValidationAssoc)
