@@ -5,6 +5,7 @@ import Combine
 import Data.Semigroup(Semigroup, (<>), Sum(Sum, getSum))
 
 
+
 f = Combine $ \n -> Sum (n + 1)
 g = Combine $ \n -> Sum (n - 1)
 

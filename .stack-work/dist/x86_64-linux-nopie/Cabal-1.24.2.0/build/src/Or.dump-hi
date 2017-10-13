@@ -1,0 +1,533 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-13 09:10:14.612593111 UTC
+
+interface Monoid-0.1.0.0-8OQYrO08pKgJ5cyLnRejZB:Or 8002
+  interface hash: 83733eda9d4a2f4d6476e57f74753d2b
+  ABI hash: 57ed5e850a56ea048992b2ca08c79a5c
+  export-list hash: 796e38c70bc2f6f05043f327d8b3cb89
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Or.semigroupOrAssoc
+  Or.Or{Or.Fst Or.Snd}
+  Or.OrAssoc
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck 7a1791e2e66f06ce3b95a443f0d4b1ed
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Arbitrary 0e953baf64c505f1557b2f8788d63173
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Gen f58893849fb1d103be122a409ecfc455
+import  -/  base-4.9.1.0:Data.Semigroup fc55c71ff629dcbd821309c310055959
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+e4146b3b78caac221abb538fc984b37a
+  $fArbitraryOr ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Or.Or a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                      ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b).
+                  @ (Or.Or a b)
+                  (Or.$fArbitraryOr_$carbitrary @ a @ b $dArbitrary $dArbitrary1)
+                  (Or.$fArbitraryOr_$cshrink @ a @ b $dArbitrary $dArbitrary1) -}
+e4146b3b78caac221abb538fc984b37a
+  $fArbitraryOr1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> Or.Or a b
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case eta
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } } }
+                 } in
+                 (Test.QuickCheck.Gen.elements
+                    @ (Or.Or a b)
+                    (GHC.Types.:
+                       @ (Or.Or a b)
+                       (Or.Fst
+                          @ a
+                          @ b
+                          ((Test.QuickCheck.Arbitrary.arbitrary @ a $dArbitrary)
+                             `cast`
+                           (Test.QuickCheck.Gen.N:Gen[0] <a>_R)
+                             (case ds1 of wild { (,) r1 r2 -> r1 })
+                             eta1))
+                       (GHC.Types.:
+                          @ (Or.Or a b)
+                          (Or.Snd
+                             @ a
+                             @ b
+                             ((Test.QuickCheck.Arbitrary.arbitrary @ b $dArbitrary1)
+                                `cast`
+                              (Test.QuickCheck.Gen.N:Gen[0] <b>_R)
+                                (case ds2 of wild { (,) r1 r2 -> r1 })
+                                eta1))
+                          (GHC.Types.[] @ (Or.Or a b)))))
+                   `cast`
+                 (Test.QuickCheck.Gen.N:Gen[0] <Or.Or a b>_R)
+                   (case ds2 of wild { (,) r1 r2 -> r2 })
+                   eta1) -}
+e4146b3b78caac221abb538fc984b37a
+  $fArbitraryOr_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Gen.Gen (Or.Or a b)
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Or.$fArbitraryOr1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R Sym (Test.QuickCheck.Gen.N:Gen[0] <Or.Or a b>_R)) -}
+e4146b3b78caac221abb538fc984b37a
+  $fArbitraryOr_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Or.Or a b -> [Or.Or a b]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   @ b
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (ds1 :: Or.Or a b) ->
+                 GHC.Types.[] @ (Or.Or a b)) -}
+e4146b3b78caac221abb538fc984b37a
+  $fEqOr ::
+    (GHC.Classes.Eq b, GHC.Classes.Eq a) => GHC.Classes.Eq (Or.Or a b)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dEq :: GHC.Classes.Eq b)
+                      ($dEq1 :: GHC.Classes.Eq a).
+                  @ (Or.Or a b)
+                  (Or.$fEqOr_$c== @ a @ b $dEq $dEq1)
+                  (Or.$fEqOr_$c/= @ a @ b $dEq $dEq1) -}
+e4146b3b78caac221abb538fc984b37a
+  $fEqOr_$c/= ::
+    (GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    Or.Or a b -> Or.Or a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq b)
+                   ($dEq1 :: GHC.Classes.Eq a)
+                   (a1 :: Or.Or a b)
+                   (b1 :: Or.Or a b) ->
+                 case a1 of wild {
+                   Or.Fst a2
+                   -> case b1 of wild1 {
+                        Or.Fst b2
+                        -> case GHC.Classes.== @ a $dEq1 a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Or.Snd ipv -> GHC.Types.True }
+                   Or.Snd a2
+                   -> case b1 of wild1 {
+                        Or.Fst ipv -> GHC.Types.True
+                        Or.Snd b2
+                        -> case GHC.Classes.== @ b $dEq a2 b2 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+e4146b3b78caac221abb538fc984b37a
+  $fEqOr_$c== ::
+    (GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    Or.Or a b -> Or.Or a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq b)
+                   ($dEq1 :: GHC.Classes.Eq a)
+                   (ds :: Or.Or a b)
+                   (ds1 :: Or.Or a b) ->
+                 case ds of wild {
+                   Or.Fst a1
+                   -> case ds1 of wild1 {
+                        Or.Fst b1 -> GHC.Classes.== @ a $dEq1 a1 b1
+                        Or.Snd ipv -> GHC.Types.False }
+                   Or.Snd a1
+                   -> case ds1 of wild1 {
+                        Or.Fst ipv -> GHC.Types.False
+                        Or.Snd b1 -> GHC.Classes.== @ b $dEq a1 b1 } }) -}
+e4146b3b78caac221abb538fc984b37a
+  $fSemigroupOr ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Data.Semigroup.Semigroup (Or.Or a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,A><L,A>m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dSemigroup :: Data.Semigroup.Semigroup a)
+                      ($dSemigroup1 :: Data.Semigroup.Semigroup b).
+                  @ (Or.Or a b)
+                  (Or.$fSemigroupOr_$c<> @ a @ b $dSemigroup $dSemigroup1)
+                  (Or.$fSemigroupOr_$csconcat @ a @ b $dSemigroup $dSemigroup1)
+                  (Or.$fSemigroupOr_$cstimes @ a @ b $dSemigroup $dSemigroup1) -}
+e4146b3b78caac221abb538fc984b37a
+  $fSemigroupOr1 :: Or.Or a b -> [Or.Or a b] -> Or.Or a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e4146b3b78caac221abb538fc984b37a
+  $fSemigroupOr_$c<> ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Or.Or a b -> Or.Or a b -> Or.Or a b
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dSemigroup :: Data.Semigroup.Semigroup a)
+                   ($dSemigroup1 :: Data.Semigroup.Semigroup b)
+                   (ds :: Or.Or a b)
+                   (ds1 :: Or.Or a b) ->
+                 case ds of wild {
+                   Or.Fst ipv -> ds1 Or.Snd a1 -> Or.Snd @ a @ b a1 }) -}
+e4146b3b78caac221abb538fc984b37a
+  $fSemigroupOr_$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    Data.List.NonEmpty.NonEmpty (Or.Or a b) -> Or.Or a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><L,A><S(SS),1*U(1*U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   (w2 :: Data.List.NonEmpty.NonEmpty (Or.Or a b)) ->
+                 case w2 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 Or.$fSemigroupOr1 @ a @ b ww1 ww2 }) -}
+e4146b3b78caac221abb538fc984b37a
+  $fSemigroupOr_$cstimes ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b) =>
+    forall b1. GHC.Real.Integral b1 => b1 -> Or.Or a b -> Or.Or a b
+  {- Arity: 5,
+     Strictness: <L,A><L,A><S(SLLLLLLLL),U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, True)
+                (\ @ a
+                   @ b
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   @ b1
+                   (w2 :: GHC.Real.Integral b1)
+                   (w3 :: b1)
+                   (w4 :: Or.Or a b) ->
+                 Or.$w$cstimes @ a @ b @ b1 w2 w3 w4) -}
+e4146b3b78caac221abb538fc984b37a
+  $fShowOr ::
+    (GHC.Show.Show b, GHC.Show.Show a) => GHC.Show.Show (Or.Or a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dShow :: GHC.Show.Show b)
+                      ($dShow1 :: GHC.Show.Show a).
+                  @ (Or.Or a b)
+                  (Or.$fShowOr_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Or.$fShowOr_$cshow @ a @ b $dShow $dShow1)
+                  (Or.$fShowOr_$cshowList @ a @ b $dShow $dShow1) -}
+d732929147781a1898e8637dd3853551
+  $fShowOr1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+195276897cddbc8161b750fd08e593c5
+  $fShowOr2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Snd "#) -}
+7d7317c3fdf54e86f4e908c236bb7211
+  $fShowOr3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fst "#) -}
+68d831010be77fba4fdb3e2b5188e5de
+  $fShowOr4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+e4146b3b78caac221abb538fc984b37a
+  $fShowOr_$cshow ::
+    (GHC.Show.Show b, GHC.Show.Show a) => Or.Or a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show b)
+                   ($dShow1 :: GHC.Show.Show a)
+                   (x :: Or.Or a b) ->
+                 case x of wild {
+                   Or.Fst b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Or.$fShowOr3
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow1
+                           Or.$fShowOr4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Or.Snd b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Or.$fShowOr2
+                        (GHC.Show.showsPrec
+                           @ b
+                           $dShow
+                           Or.$fShowOr4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+e4146b3b78caac221abb538fc984b37a
+  $fShowOr_$cshowList ::
+    (GHC.Show.Show b, GHC.Show.Show a) => [Or.Or a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show b)
+                   ($dShow1 :: GHC.Show.Show a)
+                   (eta :: [Or.Or a b])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Or.Or a b)
+                   (Or.$fShowOr_$cshowsPrec @ a @ b $dShow $dShow1 Or.$fShowOr1)
+                   eta
+                   eta1) -}
+e4146b3b78caac221abb538fc984b37a
+  $fShowOr_$cshowsPrec ::
+    (GHC.Show.Show b, GHC.Show.Show a) =>
+    GHC.Types.Int -> Or.Or a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   (w :: GHC.Show.Show b)
+                   (w1 :: GHC.Show.Show a)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: Or.Or a b) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Or.$w$cshowsPrec @ a @ b w w1 ww1 w3 }) -}
+c4af87300e2cda807772049d8617b4a2
+  $tc'Fst :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13465710896853196611##
+                   1853125943603100975##
+                   Or.$trModule
+                   Or.$tc'Fst1) -}
+bc329811f7770e115355fd7e56dd1a9b
+  $tc'Fst1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fst"#) -}
+43f3aa8a8e90639bc8ae73092d95d453
+  $tc'Snd :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4206778477495156166##
+                   16733009846762821503##
+                   Or.$trModule
+                   Or.$tc'Snd1) -}
+b336431dc1ec39d28ab1f5a97f009b46
+  $tc'Snd1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Snd"#) -}
+0061f2a16dc8a0dd87dbf76708ae3178
+  $tcOr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1481907120269862971##
+                   9108287765144866862##
+                   Or.$trModule
+                   Or.$trModule1) -}
+2bc668d84e296e26f1ec94c25dc34c8e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Or.$trModule2 Or.$trModule1) -}
+4464736cf7d09580496303d60a30fc42
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Or"#) -}
+a22934fbf49b914e3331dea19c35d765
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Monoid-0.1.0.0-8OQYrO08pKgJ5cyLnRejZB"#) -}
+e4146b3b78caac221abb538fc984b37a
+  $w$cshowsPrec ::
+    (GHC.Show.Show b, GHC.Show.Show a) =>
+    GHC.Prim.Int# -> Or.Or a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: GHC.Show.Show b)
+                   (w1 :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (w2 :: Or.Or a b) ->
+                 case w2 of wild {
+                   Or.Fst b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w1 Or.$fShowOr4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char Or.$fShowOr3 (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Or.$fShowOr3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) }
+                   Or.Snd b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ b w Or.$fShowOr4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char Or.$fShowOr2 (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Or.$fShowOr2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) } }) -}
+e4146b3b78caac221abb538fc984b37a
+  $w$cstimes :: GHC.Real.Integral b1 => b1 -> Or.Or a b -> Or.Or a b
+  {- Arity: 3,
+     Strictness: <S(SLLLLLLLL),U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><S,U>,
+     Inline: [0] -}
+e4146b3b78caac221abb538fc984b37a
+  data Or a b = Fst a | Snd b
+1d4c03810dc68473723408ebd553415d
+  type OrAssoc =
+    Or.Or GHC.Base.String GHC.Types.Ordering
+    -> Or.Or GHC.Base.String GHC.Types.Ordering
+    -> Or.Or GHC.Base.String GHC.Types.Ordering
+    -> GHC.Types.Bool
+9f2f54405368fdcce497eb06d4fbbd28
+  semigroupOrAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   ($dEq :: GHC.Classes.Eq m)
+                   ($dSemigroup :: Data.Semigroup.Semigroup m)
+                   (a :: m)
+                   (b :: m)
+                   (c :: m) ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)) -}
+instance [safe] Test.QuickCheck.Arbitrary.Arbitrary [Or.Or]
+  = Or.$fArbitraryOr
+instance [safe] GHC.Classes.Eq [Or.Or] = Or.$fEqOr
+instance [safe] Data.Semigroup.Semigroup [Or.Or] = Or.$fSemigroupOr
+instance [safe] GHC.Show.Show [Or.Or] = Or.$fShowOr
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

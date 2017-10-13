@@ -1,0 +1,709 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-13 09:10:14.165716157 UTC
+
+interface Monoid-0.1.0.0-8OQYrO08pKgJ5cyLnRejZB:Three 8002
+  interface hash: 558a9dba1cd68f565905154e7ca35285
+  ABI hash: aa892d4a5f983713d4963e8b51d50512
+  export-list hash: 13a4b6bbde6693cd8aade94b6b97e707
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Three.semigroupThreeAssoc
+  Three.Three{Three.Three}
+  Three.ThreeAssoc
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck 7a1791e2e66f06ce3b95a443f0d4b1ed
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Arbitrary 0e953baf64c505f1557b2f8788d63173
+import  -/  base-4.9.1.0:Data.Semigroup fc55c71ff629dcbd821309c310055959
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fArbitraryThree ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (Three.Three a b c)
+  DFunId
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                      ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                      ($dArbitrary2 :: Test.QuickCheck.Arbitrary.Arbitrary c).
+                  @ (Three.Three a b c)
+                  (Three.$fArbitraryThree_$carbitrary
+                     @ a
+                     @ b
+                     @ c
+                     $dArbitrary
+                     $dArbitrary1
+                     $dArbitrary2)
+                  (Three.$fArbitraryThree_$cshrink
+                     @ a
+                     @ b
+                     @ c
+                     $dArbitrary
+                     $dArbitrary1
+                     $dArbitrary2) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fArbitraryThree1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> Three.Three a b c
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   (w1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (w2 :: Test.QuickCheck.Arbitrary.Arbitrary c)
+                   (w3 :: Test.QuickCheck.Random.QCGen)
+                   (w4 :: GHC.Types.Int) ->
+                 case Three.$w$carbitrary
+                        @ a
+                        @ b
+                        @ c
+                        w
+                        w1
+                        w2
+                        w3
+                        w4 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Three.Three @ a @ b @ c ww1 ww2 ww3 }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fArbitraryThree_$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c) =>
+    Test.QuickCheck.Gen.Gen (Three.Three a b c)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                Three.$fArbitraryThree1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary c>_R
+                 ->_R Sym (Test.QuickCheck.Gen.N:Gen[0] <Three.Three a b c>_R)) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fArbitraryThree_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c) =>
+    Three.Three a b c -> [Three.Three a b c]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   @ b
+                   @ c
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   ($dArbitrary2 :: Test.QuickCheck.Arbitrary.Arbitrary c)
+                   (ds1 :: Three.Three a b c) ->
+                 GHC.Types.[] @ (Three.Three a b c)) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fEqThree ::
+    (GHC.Classes.Eq c, GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    GHC.Classes.Eq (Three.Three a b c)
+  DFunId
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      ($dEq :: GHC.Classes.Eq c)
+                      ($dEq1 :: GHC.Classes.Eq b)
+                      ($dEq2 :: GHC.Classes.Eq a).
+                  @ (Three.Three a b c)
+                  (Three.$fEqThree_$c== @ a @ b @ c $dEq $dEq1 $dEq2)
+                  (Three.$fEqThree_$c/= @ a @ b @ c $dEq $dEq1 $dEq2) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fEqThree_$c/= ::
+    (GHC.Classes.Eq c, GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    Three.Three a b c -> Three.Three a b c -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><S,1*U(U,U,U)><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   ($dEq :: GHC.Classes.Eq c)
+                   ($dEq1 :: GHC.Classes.Eq b)
+                   ($dEq2 :: GHC.Classes.Eq a)
+                   (a1 :: Three.Three a b c)
+                   (b1 :: Three.Three a b c) ->
+                 case Three.$fEqThree_$c==
+                        @ a
+                        @ b
+                        @ c
+                        $dEq
+                        $dEq1
+                        $dEq2
+                        a1
+                        b1 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fEqThree_$c== ::
+    (GHC.Classes.Eq c, GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    Three.Three a b c -> Three.Three a b c -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><S,1*U(U,U,U)><S,1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: GHC.Classes.Eq c)
+                   (w1 :: GHC.Classes.Eq b)
+                   (w2 :: GHC.Classes.Eq a)
+                   (w3 :: Three.Three a b c)
+                   (w4 :: Three.Three a b c) ->
+                 case w3 of ww { Three.Three ww1 ww2 ww3 ->
+                 case w4 of ww4 { Three.Three ww5 ww6 ww7 ->
+                 Three.$w$c== @ a @ b @ c w w1 w2 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fSemigroupThree ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    Data.Semigroup.Semigroup (Three.Three a b c)
+  DFunId
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      ($dSemigroup :: Data.Semigroup.Semigroup a)
+                      ($dSemigroup1 :: Data.Semigroup.Semigroup b)
+                      ($dSemigroup2 :: Data.Semigroup.Semigroup c).
+                  @ (Three.Three a b c)
+                  (Three.$fSemigroupThree_$c<>
+                     @ a
+                     @ b
+                     @ c
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2)
+                  (Three.$fSemigroupThree_$csconcat
+                     @ a
+                     @ b
+                     @ c
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2)
+                  (Three.$fSemigroupThree_$cstimes
+                     @ a
+                     @ b
+                     @ c
+                     $dSemigroup
+                     $dSemigroup1
+                     $dSemigroup2) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fSemigroupThree_$c<> ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    Three.Three a b c -> Three.Three a b c -> Three.Three a b c
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U,U,U)><S,1*U(U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   (w2 :: Data.Semigroup.Semigroup c)
+                   (w3 :: Three.Three a b c)
+                   (w4 :: Three.Three a b c) ->
+                 case w3 of ww { Three.Three ww1 ww2 ww3 ->
+                 case w4 of ww4 { Three.Three ww5 ww6 ww7 ->
+                 Three.Three
+                   @ a
+                   @ b
+                   @ c
+                   (Data.Semigroup.<> @ a w ww1 ww5)
+                   (Data.Semigroup.<> @ b w1 ww2 ww6)
+                   (Data.Semigroup.<> @ c w2 ww3 ww7) } }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fSemigroupThree_$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    Data.List.NonEmpty.NonEmpty (Three.Three a b c)
+    -> Three.Three a b c
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(SS),1*U(1*U(U,U,U),1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   (w2 :: Data.Semigroup.Semigroup c)
+                   (w3 :: Data.List.NonEmpty.NonEmpty (Three.Three a b c)) ->
+                 case w3 of ww { Data.List.NonEmpty.:| ww1 ww2 ->
+                 case ww1 of ww3 { Three.Three ww4 ww5 ww6 ->
+                 case Three.$w$csconcat
+                        @ a
+                        @ b
+                        @ c
+                        w
+                        w1
+                        w2
+                        ww4
+                        ww5
+                        ww6
+                        ww2 of ww7 { (#,,#) ww8 ww9 ww10 ->
+                 Three.Three @ a @ b @ c ww8 ww9 ww10 } } }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fSemigroupThree_$cstimes ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    forall b1.
+    GHC.Real.Integral b1 =>
+    b1 -> Three.Three a b c -> Three.Three a b c
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(SLLLLLLLL),U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><S,U(U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   (w2 :: Data.Semigroup.Semigroup c)
+                   @ b1
+                   (w3 :: GHC.Real.Integral b1)
+                   (w4 :: b1)
+                   (w5 :: Three.Three a b c) ->
+                 case w5 of ww { Three.Three ww1 ww2 ww3 ->
+                 case Three.$w$cstimes
+                        @ a
+                        @ b
+                        @ c
+                        w
+                        w1
+                        w2
+                        @ b1
+                        w3
+                        w4
+                        ww1
+                        ww2
+                        ww3 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 Three.Three @ a @ b @ c ww5 ww6 ww7 } }) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fShowThree ::
+    (GHC.Show.Show c, GHC.Show.Show b, GHC.Show.Show a) =>
+    GHC.Show.Show (Three.Three a b c)
+  DFunId
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      ($dShow :: GHC.Show.Show c)
+                      ($dShow1 :: GHC.Show.Show b)
+                      ($dShow2 :: GHC.Show.Show a).
+                  @ (Three.Three a b c)
+                  (Three.$fShowThree_$cshowsPrec @ a @ b @ c $dShow $dShow1 $dShow2)
+                  (Three.$fShowThree_$cshow @ a @ b @ c $dShow $dShow1 $dShow2)
+                  (Three.$fShowThree_$cshowList
+                     @ a
+                     @ b
+                     @ c
+                     $dShow
+                     $dShow1
+                     $dShow2) -}
+b1ad3545cc42114f4c67f0a03dbe0490
+  $fShowThree1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f1c4fd2148b7d761d9d92ec78bcde450
+  $fShowThree2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Three "#) -}
+be67a4a5996195b3a40338cde45482c3
+  $fShowThree3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fShowThree_$cshow ::
+    (GHC.Show.Show c, GHC.Show.Show b, GHC.Show.Show a) =>
+    Three.Three a b c -> GHC.Base.String
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   ($dShow :: GHC.Show.Show c)
+                   ($dShow1 :: GHC.Show.Show b)
+                   ($dShow2 :: GHC.Show.Show a)
+                   (x :: Three.Three a b c) ->
+                 Three.$fShowThree_$cshowsPrec
+                   @ a
+                   @ b
+                   @ c
+                   $dShow
+                   $dShow1
+                   $dShow2
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fShowThree_$cshowList ::
+    (GHC.Show.Show c, GHC.Show.Show b, GHC.Show.Show a) =>
+    [Three.Three a b c] -> GHC.Show.ShowS
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   ($dShow :: GHC.Show.Show c)
+                   ($dShow1 :: GHC.Show.Show b)
+                   ($dShow2 :: GHC.Show.Show a)
+                   (eta :: [Three.Three a b c])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Three.Three a b c)
+                   (Three.$fShowThree_$cshowsPrec
+                      @ a
+                      @ b
+                      @ c
+                      $dShow
+                      $dShow1
+                      $dShow2
+                      Three.$fShowThree1)
+                   eta
+                   eta1) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $fShowThree_$cshowsPrec ::
+    (GHC.Show.Show c, GHC.Show.Show b, GHC.Show.Show a) =>
+    GHC.Types.Int -> Three.Three a b c -> GHC.Show.ShowS
+  {- Arity: 5,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><S,1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (w :: GHC.Show.Show c)
+                   (w1 :: GHC.Show.Show b)
+                   (w2 :: GHC.Show.Show a)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: Three.Three a b c) ->
+                 case w3 of ww { GHC.Types.I# ww1 ->
+                 case w4 of ww2 { Three.Three ww3 ww4 ww5 ->
+                 Three.$w$cshowsPrec @ a @ b @ c w w1 w2 ww1 ww3 ww4 ww5 } }) -}
+666a94dcc3b5a504fd6391629c062509
+  $tc'Three :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13466876579372677585##
+                   14820134765876663778##
+                   Three.$trModule
+                   Three.$tc'Three1) -}
+23da7d72112bb540285afed42fcd76b3
+  $tc'Three1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Three"#) -}
+cad5fb076408d63ac37546797f0b8287
+  $tcThree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5042818942102208591##
+                   2679867442837380478##
+                   Three.$trModule
+                   Three.$trModule1) -}
+f25b61cd122c77c247c9eb5bbcbca617
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Three.$trModule2 Three.$trModule1) -}
+2431d4b7f5b8c2b69bab4fce831e8c2d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Three"#) -}
+725487721c831416c60106446b742997
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Monoid-0.1.0.0-8OQYrO08pKgJ5cyLnRejZB"#) -}
+a9690159abfdd692534b3704d4daf2ff
+  $w$c== ::
+    (GHC.Classes.Eq c, GHC.Classes.Eq b, GHC.Classes.Eq a) =>
+    a -> b -> c -> a -> b -> c -> GHC.Types.Bool
+  {- Arity: 9, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   (w :: GHC.Classes.Eq c)
+                   (w1 :: GHC.Classes.Eq b)
+                   (w2 :: GHC.Classes.Eq a)
+                   (ww :: a)
+                   (ww1 :: b)
+                   (ww2 :: c)
+                   (ww3 :: a)
+                   (ww4 :: b)
+                   (ww5 :: c) ->
+                 case GHC.Classes.== @ a w2 ww ww3 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.== @ b w1 ww1 ww4 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True -> GHC.Classes.== @ c w ww2 ww5 } }) -}
+c0f9c68f7fc97f6349a3b8331c0e3042
+  $w$carbitrary ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b,
+     Test.QuickCheck.Arbitrary.Arbitrary c) =>
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> (# a, b, c #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   (w :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   (w1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (w2 :: Test.QuickCheck.Arbitrary.Arbitrary c)
+                   (w3 :: Test.QuickCheck.Random.QCGen)
+                   (w4 :: GHC.Types.Int) ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case w3
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } } }
+                 } in
+                 (# (Test.QuickCheck.Arbitrary.arbitrary @ a w)
+                      `cast`
+                    (Test.QuickCheck.Gen.N:Gen[0] <a>_R)
+                      (case ds1 of wild { (,) r1 r2 -> r1 })
+                      w4,
+                    (Test.QuickCheck.Arbitrary.arbitrary @ b w1)
+                      `cast`
+                    (Test.QuickCheck.Gen.N:Gen[0] <b>_R)
+                      (case ds2 of wild { (,) r1 r2 -> r1 })
+                      w4,
+                    (Test.QuickCheck.Arbitrary.arbitrary @ c w2)
+                      `cast`
+                    (Test.QuickCheck.Gen.N:Gen[0] <c>_R)
+                      (case ds2 of wild { (,) r1 r2 ->
+                       case r2
+                              `cast`
+                            (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                       case System.Random.TF.Gen.$wtfGenSplit
+                              ww1
+                              ww2
+                              ww3
+                              ww4 of ww7 { (#,#) ww8 ww9 ->
+                       ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])) } } })
+                      w4 #)) -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  $w$csconcat ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    a -> b -> c -> [Three.Three a b c] -> (# a, b, c #)
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   (w :: Data.Semigroup.Semigroup a)
+                   (w1 :: Data.Semigroup.Semigroup b)
+                   (w2 :: Data.Semigroup.Semigroup c)
+                   (ww :: a)
+                   (ww1 :: b)
+                   (ww2 :: c)
+                   (ww3 :: [Three.Three a b c]) ->
+                 letrec {
+                   $wgo :: a -> b -> c -> [Three.Three a b c] -> (# a, b, c #)
+                     {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+                   = \ (ww4 :: a) (ww5 :: b) (ww6 :: c) (w3 :: [Three.Three a b c]) ->
+                     case w3 of wild1 {
+                       [] -> (# ww4, ww5, ww6 #)
+                       : c1 cs
+                       -> case c1 of ww7 { Three.Three ww8 ww9 ww10 ->
+                          case $wgo ww8 ww9 ww10 cs of ww11 { (#,,#) ww12 ww13 ww14 ->
+                          (# Data.Semigroup.<> @ a w ww4 ww12,
+                             Data.Semigroup.<> @ b w1 ww5 ww13,
+                             Data.Semigroup.<> @ c w2 ww6 ww14 #) } } }
+                 } in
+                 $wgo ww ww1 ww2 ww3) -}
+38ab7f995f6d534050be191fd484d069
+  $w$cshowsPrec ::
+    (GHC.Show.Show c, GHC.Show.Show b, GHC.Show.Show a) =>
+    GHC.Prim.Int# -> a -> b -> c -> GHC.Show.ShowS
+  {- Arity: 7,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   (w :: GHC.Show.Show c)
+                   (w1 :: GHC.Show.Show b)
+                   (w2 :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: a)
+                   (ww2 :: b)
+                   (ww3 :: c) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w2 Three.$fShowThree3 ww1
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ b w1 Three.$fShowThree3 ww2
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ c w Three.$fShowThree3 ww3
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Three.$fShowThree2
+                       (f (GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.showSpace1
+                             (f1 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x)))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x)) }) -}
+549dcd2e79fab898a7fd904becd163e7
+  $w$cstimes ::
+    (Data.Semigroup.Semigroup a, Data.Semigroup.Semigroup b,
+     Data.Semigroup.Semigroup c) =>
+    forall b1.
+    GHC.Real.Integral b1 =>
+    b1 -> a -> b -> c -> (# a, b, c #)
+  {- Arity: 8,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(SLLLLLLLL),U(U,U,C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+5dc2d0a7fdd6cc91a4f2211ec72e0533
+  data Three a b c = Three a b c
+8ef04847ce95889cb2567b6270fc6109
+  type ThreeAssoc =
+    Three.Three GHC.Base.String GHC.Base.String GHC.Base.String
+    -> Three.Three GHC.Base.String GHC.Base.String GHC.Base.String
+    -> Three.Three GHC.Base.String GHC.Base.String GHC.Base.String
+    -> GHC.Types.Bool
+71331ca77f9774fe7298ed41d7b426b4
+  semigroupThreeAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   ($dEq :: GHC.Classes.Eq m)
+                   ($dSemigroup :: Data.Semigroup.Semigroup m)
+                   (a :: m)
+                   (b :: m)
+                   (c :: m) ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)) -}
+instance [safe] Test.QuickCheck.Arbitrary.Arbitrary [Three.Three]
+  = Three.$fArbitraryThree
+instance [safe] GHC.Classes.Eq [Three.Three] = Three.$fEqThree
+instance [safe] Data.Semigroup.Semigroup [Three.Three]
+  = Three.$fSemigroupThree
+instance [safe] GHC.Show.Show [Three.Three] = Three.$fShowThree
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
